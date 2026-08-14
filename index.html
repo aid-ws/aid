@@ -1,0 +1,4348 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIDX 사업단 | 에이아이디(AID) 전환 중점 전문대학 지원사업 (대전보건대 × 우송정보대)</title>
+  <meta name="description" content="2026학년도 교육부 · 한국연구재단 선정 에이아이디(AID, AI+Digital) 전환 중점 전문대학 지원사업 - 대전보건대학교(주관)와 우송정보대학(참여) 연합 사업단 공식 포털">
+  
+  <!-- Pretendard & Inter Web Fonts -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Embedded CSS Stylesheet -->
+  <style>
+    /* ==========================================================================
+       AIDX 사업단 공식 포털 - Modern SaaS Design System
+       Color Palette: Clean Slate & White + Deep Indigo/Violet Accent
+       ========================================================================== */
+
+    :root {
+      /* Brand Primary Colors */
+      --primary-50: #eef2ff;
+      --primary-100: #e0e7ff;
+      --primary-200: #c7d2fe;
+      --primary-500: #6366f1;
+      --primary-600: #4f46e5;
+      --primary-700: #4338ca;
+      --primary-900: #312e81;
+
+      /* Accent & Gradients */
+      --accent-purple: #7c3aed;
+      --accent-blue: #2563eb;
+      --accent-cyan: #06b6d4;
+      --accent-emerald: #10b981;
+      --accent-rose: #f43f5e;
+      --accent-amber: #f59e0b;
+
+      /* Neutral Surface Colors */
+      --bg-main: #ffffff;
+      --bg-alt: #f8fafc;
+      --bg-subtle: #f1f5f9;
+      --bg-card: #ffffff;
+      --bg-glass: rgba(255, 255, 255, 0.85);
+
+      /* Borders & Dividers */
+      --border-subtle: #f1f5f9;
+      --border-light: #e2e8f0;
+      --border-medium: #cbd5e1;
+      --border-focus: #6366f1;
+
+      /* Typography Colors */
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-subtle: #64748b;
+      --text-light: #94a3b8;
+      --text-inverse: #ffffff;
+
+      /* Shadows */
+      --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+      --shadow-sm: 0 2px 8px -2px rgba(15, 23, 42, 0.06), 0 1px 4px -1px rgba(15, 23, 42, 0.04);
+      --shadow-md: 0 8px 24px -4px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+      --shadow-lg: 0 16px 40px -8px rgba(15, 23, 42, 0.12), 0 8px 20px -4px rgba(15, 23, 42, 0.06);
+      --shadow-glow: 0 0 30px rgba(99, 102, 241, 0.25);
+
+      /* Radii */
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --radius-full: 9999px;
+
+      /* Transitions */
+      --transition-fast: 0.15s ease;
+      --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+      /* Layout */
+      --max-width: 1240px;
+      --header-height: 72px;
+    }
+
+    /* Reset & Base Setup */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: 'Pretendard', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition-fast);
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
+      border: none;
+      outline: none;
+    }
+
+    img, svg, iframe {
+      display: block;
+      max-width: 100%;
+    }
+
+    /* Utility Containers */
+    .section-container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 100px 0;
+      position: relative;
+    }
+
+    /* Typography Helpers */
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 60px;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--primary-600);
+      background: var(--primary-50);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      margin-bottom: 16px;
+      border: 1px solid var(--primary-100);
+    }
+
+    .section-tag.locked-tag {
+      color: #dc2626;
+      background: #fef2f2;
+      border-color: #fee2e2;
+    }
+
+    .section-title {
+      font-size: 2.25rem;
+      font-weight: 800;
+      line-height: 1.3;
+      color: var(--text-main);
+      letter-spacing: -0.025em;
+      margin-bottom: 16px;
+    }
+
+    .section-subtitle {
+      font-size: 1.0625rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--primary-600) 0%, var(--accent-purple) 60%, var(--accent-blue) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ==========================================================================
+       Buttons & Interactive Elements
+       ========================================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-weight: 600;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: all var(--transition-normal);
+      white-space: nowrap;
+    }
+
+    .btn i, .btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .btn-sm {
+      padding: 8px 16px;
+      font-size: 0.875rem;
+      border-radius: var(--radius-sm);
+    }
+
+    .btn-md {
+      padding: 12px 22px;
+      font-size: 0.9375rem;
+    }
+
+    .btn-lg {
+      padding: 14px 28px;
+      font-size: 1.0625rem;
+      border-radius: var(--radius-md);
+    }
+
+    .btn-full {
+      width: 100%;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary-600) 0%, var(--accent-purple) 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(79, 70, 229, 0.45);
+    }
+
+    .btn-secondary {
+      background: var(--bg-main);
+      color: var(--text-main);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-xs);
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-alt);
+      border-color: var(--border-medium);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text-main);
+      border: 1px solid var(--border-medium);
+    }
+
+    .btn-outline:hover {
+      background: var(--bg-alt);
+      border-color: var(--text-main);
+    }
+
+    .btn-danger {
+      background: #ef4444;
+      color: #ffffff;
+    }
+
+    .btn-danger:hover {
+      background: #dc2626;
+    }
+
+    /* ==========================================================================
+       Announcement Bar
+       ========================================================================== */
+    .announcement-bar {
+      background: linear-gradient(90deg, #1e1b4b 0%, #312e81 50%, #1e1b4b 100%);
+      color: #ffffff;
+      font-size: 0.875rem;
+      padding: 8px 16px;
+      position: relative;
+      z-index: 60;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .announcement-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .badge-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(255, 255, 255, 0.18);
+      padding: 2px 10px;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .badge-tag i {
+      width: 14px;
+      height: 14px;
+      color: #facc15;
+    }
+
+    .announcement-text {
+      font-weight: 400;
+    }
+
+    .announcement-text strong {
+      font-weight: 700;
+      color: #a5b4fc;
+    }
+
+    .announcement-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .announcement-link:hover {
+      color: #c7d2fe;
+    }
+
+    .announcement-link i {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* ==========================================================================
+       Header & Navigation
+       ========================================================================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      height: var(--header-height);
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-light);
+      transition: all var(--transition-fast);
+    }
+
+    .header-container {
+      max-width: var(--max-width);
+      height: 100%;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Logo */
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon-box {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--primary-600), var(--accent-purple));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 900;
+      box-shadow: 0 4px 12px rgba(79, 70, 229, 0.35);
+    }
+
+    .logo-icon-box.sm {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      font-size: 0.8125rem;
+    }
+
+    .logo-symbol {
+      font-size: 0.9375rem;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-text-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-title {
+      font-size: 1.125rem;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .logo-subtitle {
+      font-size: 0.75rem;
+      color: var(--text-subtle);
+      font-weight: 500;
+    }
+
+    /* Nav Menu */
+    .main-nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-list {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 6px;
+    }
+
+    .nav-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      border-radius: var(--radius-sm);
+      transition: all var(--transition-fast);
+    }
+
+    .nav-item:hover {
+      color: var(--primary-600);
+      background: var(--bg-subtle);
+    }
+
+    .nav-highlight {
+      color: var(--primary-600);
+      background: var(--primary-50);
+      border: 1px solid var(--primary-100);
+    }
+
+    .nav-highlight:hover {
+      background: var(--primary-100);
+      color: var(--primary-700);
+    }
+
+    .nav-icon {
+      width: 15px;
+      height: 15px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mobile-toggle-btn {
+      display: none;
+      background: transparent;
+      padding: 6px;
+      color: var(--text-main);
+      cursor: pointer;
+    }
+
+    .mobile-toggle-btn i {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* Mobile Drawer */
+    .mobile-drawer {
+      display: none;
+      position: absolute;
+      top: var(--header-height);
+      left: 0;
+      width: 100%;
+      background: #ffffff;
+      border-bottom: 1px solid var(--border-light);
+      box-shadow: var(--shadow-lg);
+      padding: 20px 24px;
+    }
+
+    .mobile-drawer.open {
+      display: block;
+    }
+
+    .mobile-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .mobile-nav-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--text-main);
+      border-radius: var(--radius-sm);
+      background: var(--bg-alt);
+    }
+
+    .mobile-nav-link.text-primary {
+      color: var(--primary-600);
+      background: var(--primary-50);
+    }
+
+    .mobile-drawer-cta {
+      margin-top: 14px;
+    }
+
+    /* ==========================================================================
+       Hero Section (with 3D Spline Robot)
+       ========================================================================== */
+    .hero-section {
+      padding: 60px 0 80px;
+      background: radial-gradient(circle at 80% 20%, rgba(224, 231, 255, 0.6) 0%, rgba(255, 255, 255, 0) 50%),
+                  radial-gradient(circle at 10% 80%, rgba(243, 232, 255, 0.4) 0%, rgba(255, 255, 255, 0) 40%),
+                  #ffffff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg-glow {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      filter: blur(100px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .glow-top {
+      top: -150px;
+      right: -100px;
+      background: rgba(99, 102, 241, 0.15);
+    }
+
+    .glow-bottom {
+      bottom: -200px;
+      left: -100px;
+      background: rgba(168, 85, 247, 0.12);
+    }
+
+    .hero-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      background: var(--primary-50);
+      border: 1px solid var(--primary-200);
+      color: var(--primary-700);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--primary-600);
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.7);
+      animation: pulse-ring 2s infinite cubic-bezier(0.66, 0, 0, 1);
+    }
+
+    @keyframes pulse-ring {
+      0% {
+        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 10px rgba(79, 70, 229, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
+      }
+    }
+
+    .hero-headline {
+      font-size: 3rem;
+      font-weight: 850;
+      line-height: 1.22;
+      letter-spacing: -0.03em;
+      color: var(--text-main);
+    }
+
+    .hero-subtext {
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      max-width: 600px;
+    }
+
+    .hero-subtext strong {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+
+    .hero-feature-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .feature-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: var(--bg-alt);
+      border: 1px solid var(--border-light);
+      padding: 6px 12px;
+      border-radius: var(--radius-full);
+    }
+
+    .feature-pill i {
+      width: 14px;
+      height: 14px;
+      color: var(--accent-emerald);
+    }
+
+    /* 3D Spline Robot Frame Wrapper */
+    .hero-visual {
+      position: relative;
+    }
+
+    .spline-card {
+      position: relative;
+      width: 100%;
+      height: 520px;
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg), 0 0 0 1px rgba(255, 255, 255, 0.9) inset;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .spline-card-header {
+      padding: 14px 20px;
+      border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(255, 255, 255, 0.5);
+      z-index: 10;
+    }
+
+    .spline-status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .status-indicator.online {
+      background-color: var(--accent-emerald);
+      box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+    }
+
+    .status-label {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: -0.01em;
+    }
+
+    .spline-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-subtle);
+    }
+
+    .spline-hint i {
+      width: 13px;
+      height: 13px;
+    }
+
+    .spline-frame-wrapper {
+      position: relative;
+      width: 100%;
+      flex: 1;
+      background: radial-gradient(circle at 50% 50%, rgba(238, 242, 255, 0.5) 0%, rgba(255, 255, 255, 0.2) 80%);
+    }
+
+    .spline-frame-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      position: relative;
+      z-index: 2;
+    }
+
+    .spline-loading {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: #ffffff;
+      z-index: 1;
+      font-size: 0.875rem;
+      color: var(--text-subtle);
+    }
+
+    .spinner {
+      width: 32px;
+      height: 32px;
+      border: 3px solid var(--primary-100);
+      border-top-color: var(--primary-600);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* Floating Widgets on 3D Card */
+    .floating-widget {
+      position: absolute;
+      z-index: 5;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: var(--shadow-md);
+      pointer-events: none;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .widget-left {
+      bottom: 24px;
+      left: 20px;
+      animation-delay: 0s;
+    }
+
+    .widget-right {
+      top: 70px;
+      right: 20px;
+      animation-delay: 2s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .widget-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+    }
+
+    .widget-icon.bg-blue {
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    }
+
+    .widget-icon.bg-purple {
+      background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+    }
+
+    .widget-icon i {
+      width: 18px;
+      height: 18px;
+    }
+
+    .widget-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .widget-title {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--text-subtle);
+      letter-spacing: 0.04em;
+    }
+
+    .widget-value {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    /* ==========================================================================
+       Key Metrics Stats Section
+       ========================================================================== */
+    .stats-section {
+      padding: 30px 0 60px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .stat-card {
+      background: var(--bg-alt);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      transition: all var(--transition-normal);
+    }
+
+    .stat-card:hover {
+      background: #ffffff;
+      border-color: var(--primary-200);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+
+    .stat-icon-wrapper {
+      width: 44px;
+      height: 44px;
+      background: var(--primary-50);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-600);
+      flex-shrink: 0;
+    }
+
+    .stat-icon-wrapper i {
+      width: 22px;
+      height: 22px;
+    }
+
+    .stat-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-number {
+      font-family: 'Plus Jakarta Sans', 'Pretendard', sans-serif;
+      font-size: 1.875rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+    }
+
+    .stat-unit {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary-600);
+      margin-left: 4px;
+    }
+
+    .stat-label {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-top: 4px;
+    }
+
+    .stat-desc {
+      font-size: 0.75rem;
+      color: var(--text-subtle);
+      margin-top: 2px;
+    }
+
+    /* ==========================================================================
+       Overview Section
+       ========================================================================== */
+    .overview-section {
+      background: #ffffff;
+    }
+
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .overview-card {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: all var(--transition-normal);
+    }
+
+    .overview-card:hover {
+      border-color: var(--primary-300);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+
+    .overview-card.active-card {
+      border-color: var(--primary-500);
+      box-shadow: 0 0 0 1px var(--primary-500), var(--shadow-md);
+      background: linear-gradient(180deg, #ffffff 0%, var(--primary-50) 150%);
+    }
+
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--primary-50);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-600);
+      margin-bottom: 20px;
+    }
+
+    .card-icon i {
+      width: 24px;
+      height: 24px;
+    }
+
+    .overview-card h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    .overview-card p {
+      font-size: 0.9375rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+
+    .card-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 16px;
+    }
+
+    .card-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .card-list li i {
+      width: 16px;
+      height: 16px;
+      color: var(--primary-600);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* ==========================================================================
+       4 Core Strategies (Bento Grid)
+       ========================================================================== */
+    .strategy-section {
+      background: var(--bg-alt);
+    }
+
+    .strategy-bento-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .bento-card {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all var(--transition-normal);
+    }
+
+    .bento-card:hover {
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary-200);
+      transform: translateY(-3px);
+    }
+
+    .bento-large {
+      grid-column: span 2;
+      background: linear-gradient(135deg, #ffffff 0%, var(--primary-50) 100%);
+    }
+
+    .bento-wide {
+      grid-column: span 3;
+      background: linear-gradient(90deg, #ffffff 0%, #fdf4ff 100%);
+    }
+
+    .bento-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .bento-num {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary-600);
+    }
+
+    .bento-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      background: var(--primary-50);
+      color: var(--primary-700);
+      border: 1px solid var(--primary-100);
+    }
+
+    .bento-body {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .bento-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: var(--primary-100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-700);
+    }
+
+    .bento-icon i {
+      width: 20px;
+      height: 20px;
+    }
+
+    .bento-body h3 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.35;
+    }
+
+    .bento-body p {
+      font-size: 0.9375rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .bento-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .bento-tags span {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--primary-700);
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid var(--primary-200);
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+    }
+
+    .bento-stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .bento-stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bento-stat-item strong {
+      font-size: 0.9375rem;
+      color: var(--text-main);
+    }
+
+    .bento-stat-item span {
+      font-size: 0.8125rem;
+      color: var(--text-subtle);
+    }
+
+    /* ==========================================================================
+       Roadmap Section
+       ========================================================================== */
+    .roadmap-section {
+      background: #ffffff;
+    }
+
+    .roadmap-tab-nav {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+
+    .roadmap-tab-btn {
+      background: var(--bg-alt);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 14px 28px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      transition: all var(--transition-normal);
+    }
+
+    .roadmap-tab-btn.active {
+      background: var(--primary-600);
+      border-color: var(--primary-600);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
+    }
+
+    .tab-badge {
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+      background: rgba(0, 0, 0, 0.08);
+    }
+
+    .roadmap-tab-btn.active .tab-badge {
+      background: rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+    }
+
+    .tab-title {
+      font-weight: 700;
+      font-size: 0.9375rem;
+    }
+
+    .roadmap-panel {
+      display: none;
+    }
+
+    .roadmap-panel.active {
+      display: block;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .roadmap-timeline-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .timeline-box {
+      background: var(--bg-alt);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: all var(--transition-normal);
+    }
+
+    .timeline-box:hover {
+      background: #ffffff;
+      border-color: var(--primary-300);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+    }
+
+    .timeline-step {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      color: var(--primary-600);
+      margin-bottom: 12px;
+    }
+
+    .timeline-box h4 {
+      font-size: 1.0625rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.35;
+      margin-bottom: 10px;
+    }
+
+    .timeline-box p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 16px;
+      flex: 1;
+    }
+
+    .timeline-metric {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent-emerald);
+      background: #ecfdf5;
+      border: 1px solid #d1fae5;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      width: fit-content;
+    }
+
+    .timeline-metric i {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* ==========================================================================
+       Consortium Section
+       ========================================================================== */
+    .consortium-section {
+      background: var(--bg-alt);
+    }
+
+    .consortium-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+
+    .consortium-card {
+      background: #ffffff;
+      border-radius: var(--radius-xl);
+      padding: 36px 32px;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: all var(--transition-normal);
+    }
+
+    .consortium-card.primary-border {
+      border: 2px solid var(--primary-500);
+    }
+
+    .consortium-card.secondary-border {
+      border: 2px solid var(--accent-blue);
+    }
+
+    .consortium-badge {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+    }
+
+    .consortium-badge.leader {
+      background: var(--primary-50);
+      color: var(--primary-700);
+      border: 1px solid var(--primary-200);
+    }
+
+    .consortium-badge.partner {
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+    }
+
+    .consortium-logo-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .consortium-logo-box .icon-accent {
+      width: 28px;
+      height: 28px;
+      color: var(--primary-600);
+    }
+
+    .consortium-logo-box h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .consortium-role-desc {
+      font-size: 0.9375rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
+
+    .consortium-features {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 24px;
+      flex: 1;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .feature-item i {
+      width: 16px;
+      height: 16px;
+      color: var(--primary-600);
+    }
+
+    .consortium-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--primary-600);
+      padding-top: 14px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .consortium-link:hover {
+      color: var(--primary-700);
+      text-decoration: underline;
+    }
+
+    .consortium-link i {
+      width: 15px;
+      height: 15px;
+    }
+
+    /* Gov Support Banner */
+    .gov-support-banner {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 24px 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .gov-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .gov-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--bg-alt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-600);
+    }
+
+    .gov-icon i {
+      width: 22px;
+      height: 22px;
+    }
+
+    .gov-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .gov-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-subtle);
+      text-transform: uppercase;
+    }
+
+    .gov-name {
+      font-size: 1.0625rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .gov-divider {
+      width: 1px;
+      height: 40px;
+      background: var(--border-light);
+    }
+
+    /* ==========================================================================
+       Protected Document Portal (Google Drive Integration)
+       ========================================================================== */
+    .drive-section {
+      background: #ffffff;
+    }
+
+    /* Locked Gate State */
+    .drive-gate-card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-xl);
+      padding: 40px;
+      box-shadow: var(--shadow-lg);
+      text-align: center;
+    }
+
+    .gate-icon-wrapper {
+      width: 64px;
+      height: 64px;
+      background: #fef2f2;
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #ef4444;
+      margin-bottom: 20px;
+    }
+
+    .gate-icon-wrapper i {
+      width: 32px;
+      height: 32px;
+    }
+
+    .gate-info h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 10px;
+    }
+
+    .gate-info p {
+      font-size: 0.9375rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .quick-pass-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary-50);
+      border: 1px dashed var(--primary-200);
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.8125rem;
+      color: var(--primary-700);
+      margin-bottom: 28px;
+    }
+
+    .quick-pass-hint i {
+      width: 15px;
+      height: 15px;
+    }
+
+    .gate-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      text-align: left;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .input-group label {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .form-select, .form-input, .form-textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-sm);
+      background: #ffffff;
+      color: var(--text-main);
+      font-size: 0.9375rem;
+      transition: all var(--transition-fast);
+    }
+
+    .form-select:focus, .form-input:focus, .form-textarea:focus {
+      border-color: var(--primary-600);
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+    }
+
+    .password-input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .btn-toggle-pw {
+      position: absolute;
+      right: 10px;
+      background: transparent;
+      color: var(--text-subtle);
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .btn-toggle-pw i {
+      width: 16px;
+      height: 16px;
+    }
+
+    .gate-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .gate-actions button {
+      flex: 1;
+    }
+
+    .auth-error-msg {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      color: #dc2626;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .auth-error-msg.visible {
+      display: flex;
+    }
+
+    /* Unlocked Drive Hub State */
+    .drive-hub-container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .drive-hub-container.hidden {
+      display: none;
+    }
+
+    .hub-user-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--bg-alt);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+    }
+
+    .user-profile {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .user-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--primary-100);
+      color: var(--primary-700);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .user-avatar i {
+      width: 20px;
+      height: 20px;
+    }
+
+    .user-meta {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .user-role-badge {
+      font-size: 0.875rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .user-session-text {
+      font-size: 0.75rem;
+      color: var(--accent-emerald);
+      font-weight: 600;
+    }
+
+    .hub-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Drive Connect Banner */
+    .drive-connect-banner {
+      background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%);
+      border: 1px solid #bfdbfe;
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .drive-banner-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .drive-logo-box {
+      background: #ffffff;
+      padding: 8px;
+      border-radius: 10px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .drive-banner-info h4 {
+      font-size: 1.0625rem;
+      font-weight: 800;
+      color: #1e3a8a;
+      margin-bottom: 2px;
+    }
+
+    .drive-banner-info p {
+      font-size: 0.8125rem;
+      color: #3b82f6;
+      font-weight: 600;
+    }
+
+    /* Drive Toolbar */
+    .drive-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .filter-tabs {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      background: var(--bg-alt);
+      border: 1px solid var(--border-light);
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .filter-btn:hover {
+      background: var(--bg-subtle);
+      color: var(--text-main);
+    }
+
+    .filter-btn.active {
+      background: var(--primary-600);
+      border-color: var(--primary-600);
+      color: #ffffff;
+    }
+
+    .search-box {
+      position: relative;
+      min-width: 260px;
+    }
+
+    .search-box i {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      color: var(--text-subtle);
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 8px 12px 8px 36px;
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-sm);
+      font-size: 0.875rem;
+    }
+
+    /* File Grid & Cards */
+    .file-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .file-item-card {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+      transition: all var(--transition-normal);
+    }
+
+    .file-item-card:hover {
+      border-color: var(--primary-300);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .file-card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .file-type-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: #ffffff;
+      flex-shrink: 0;
+    }
+
+    .file-type-badge.pdf { background: #ef4444; }
+    .file-type-badge.doc { background: #2563eb; }
+    .file-type-badge.xls { background: #10b981; }
+    .file-type-badge.ppt { background: #f97316; }
+
+    .file-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      flex: 1;
+    }
+
+    .file-name {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.35;
+    }
+
+    .file-meta-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.75rem;
+      color: var(--text-subtle);
+    }
+
+    .file-category-tag {
+      background: var(--bg-subtle);
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+    }
+
+    .file-card-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .file-auth-level {
+      font-size: 0.6875rem;
+      font-weight: 700;
+      color: var(--primary-700);
+      background: var(--primary-50);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .file-actions-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-file-action {
+      background: transparent;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      padding: 6px 10px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: var(--transition-fast);
+    }
+
+    .btn-file-action:hover {
+      background: var(--primary-50);
+      border-color: var(--primary-300);
+      color: var(--primary-600);
+    }
+
+    .btn-file-action i {
+      width: 13px;
+      height: 13px;
+    }
+
+    /* ==========================================================================
+       Contacts Directory Section
+       ========================================================================== */
+    .contact-section {
+      background: var(--bg-alt);
+    }
+
+    .contact-layout-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 32px;
+    }
+
+    /* POC Directory */
+    .poc-directory {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .directory-heading {
+      font-size: 1.125rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .directory-heading i {
+      width: 20px;
+      height: 20px;
+      color: var(--primary-600);
+    }
+
+    .poc-cards-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .poc-card {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      box-shadow: var(--shadow-xs);
+      transition: all var(--transition-fast);
+    }
+
+    .poc-card:hover {
+      border-color: var(--primary-200);
+      box-shadow: var(--shadow-md);
+    }
+
+    .poc-card.highlight-poc {
+      border-left: 4px solid var(--primary-600);
+    }
+
+    .poc-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .poc-badge {
+      font-size: 0.6875rem;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .poc-badge.gov {
+      background: #f1f5f9;
+      color: #334155;
+    }
+
+    .poc-badge.leader {
+      background: var(--primary-50);
+      color: var(--primary-700);
+    }
+
+    .poc-badge.partner {
+      background: #eff6ff;
+      color: #1e40af;
+    }
+
+    .poc-affiliation {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--text-subtle);
+    }
+
+    .poc-body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .poc-person {
+      font-size: 0.9375rem;
+      color: var(--text-main);
+    }
+
+    .poc-contacts {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--primary-600);
+    }
+
+    .contact-link:hover {
+      color: var(--primary-700);
+      text-decoration: underline;
+    }
+
+    .contact-link i {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* Inquiry Form Box */
+    .inquiry-box {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-xl);
+      padding: 32px;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .inquiry-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .inquiry-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--primary-50);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-600);
+      flex-shrink: 0;
+    }
+
+    .inquiry-icon i {
+      width: 20px;
+      height: 20px;
+    }
+
+    .inquiry-header h3 {
+      font-size: 1.125rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .inquiry-header p {
+      font-size: 0.8125rem;
+      color: var(--text-subtle);
+      margin-top: 2px;
+    }
+
+    .inquiry-form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .req {
+      color: #ef4444;
+    }
+
+    .form-row-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    /* ==========================================================================
+       Related Sites Section (User Requested)
+       ========================================================================== */
+    .related-section {
+      background: #ffffff;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .related-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .related-card {
+      background: var(--bg-alt);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      transition: all var(--transition-normal);
+      position: relative;
+    }
+
+    .related-card:hover {
+      background: #ffffff;
+      border-color: var(--primary-300);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+    }
+
+    .related-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+    }
+
+    .related-icon.bg-nrf { background: linear-gradient(135deg, #0284c7, #0369a1); }
+    .related-icon.bg-hit { background: linear-gradient(135deg, #059669, #047857); }
+    .related-icon.bg-wsi { background: linear-gradient(135deg, #dc2626, #b91c1c); }
+    .related-icon.bg-moe { background: linear-gradient(135deg, #4f46e5, #3730a3); }
+
+    .related-icon i {
+      width: 22px;
+      height: 22px;
+    }
+
+    .related-info h4 {
+      font-size: 1.0625rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.3;
+    }
+
+    .related-info p {
+      font-size: 0.75rem;
+      color: var(--text-subtle);
+      margin-top: 2px;
+    }
+
+    .related-sub {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--primary-600);
+      margin-top: 8px;
+    }
+
+    .related-arrow {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: var(--text-light);
+      transition: var(--transition-fast);
+    }
+
+    .related-card:hover .related-arrow {
+      color: var(--primary-600);
+      transform: translate(2px, -2px);
+    }
+
+    .related-arrow i {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* ==========================================================================
+       Modals & Overlays
+       ========================================================================== */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-card {
+      width: 100%;
+      max-width: 800px;
+      max-height: 90vh;
+      background: #ffffff;
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      animation: modalPop 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .modal-card.modal-sm {
+      max-width: 520px;
+    }
+
+    @keyframes modalPop {
+      from { opacity: 0; transform: scale(0.95) translateY(10px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .modal-header {
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--border-light);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .modal-title-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .modal-badge {
+      font-size: 0.6875rem;
+      font-weight: 800;
+      background: #ef4444;
+      color: #ffffff;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .modal-title-group h3 {
+      font-size: 1.125rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .modal-close-btn {
+      background: transparent;
+      color: var(--text-subtle);
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 6px;
+    }
+
+    .modal-close-btn:hover {
+      background: var(--bg-subtle);
+      color: var(--text-main);
+    }
+
+    .modal-close-btn i {
+      width: 20px;
+      height: 20px;
+    }
+
+    .modal-body {
+      padding: 24px;
+      overflow-y: auto;
+      flex: 1;
+      font-size: 0.9375rem;
+      line-height: 1.7;
+    }
+
+    .doc-viewer-card {
+      background: var(--bg-alt);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 24px;
+    }
+
+    .doc-viewer-card h4 {
+      font-size: 1.125rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .doc-viewer-card p {
+      margin-bottom: 14px;
+      color: var(--text-muted);
+    }
+
+    .doc-section-block {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 14px;
+      margin-bottom: 10px;
+    }
+
+    .doc-section-block h5 {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--primary-700);
+      margin-bottom: 6px;
+    }
+
+    .doc-section-block ul {
+      padding-left: 20px;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+    }
+
+    .config-desc {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .modal-footer {
+      padding: 16px 24px;
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border-light);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .modal-footer-meta {
+      font-size: 0.8125rem;
+      color: var(--text-subtle);
+    }
+
+    .modal-footer-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .mt-4 {
+      margin-top: 16px;
+    }
+
+    /* ==========================================================================
+       Toast Notifications
+       ========================================================================== */
+    .toast-container {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 200;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .toast {
+      background: #1e1b4b;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      animation: slideToast 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes slideToast {
+      from { opacity: 0; transform: translateX(20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .toast i {
+      width: 18px;
+      height: 18px;
+      color: var(--accent-emerald);
+    }
+
+    /* ==========================================================================
+       Site Footer
+       ========================================================================== */
+    .site-footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 70px 0 30px;
+      border-top: 1px solid #1e293b;
+    }
+
+    .footer-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .footer-top-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr 1.2fr;
+      gap: 40px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    .footer-brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .footer-brand-title {
+      font-size: 1.125rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .footer-notice-text {
+      font-size: 0.875rem;
+      line-height: 1.7;
+      color: #cbd5e1;
+      margin-bottom: 16px;
+    }
+
+    .footer-notice-text strong {
+      color: #ffffff;
+    }
+
+    .footer-consortium-names {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 0.8125rem;
+      color: #94a3b8;
+    }
+
+    .footer-consortium-names strong {
+      color: #e2e8f0;
+    }
+
+    .footer-links-col h4, .footer-contact-col h4 {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .footer-links-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links-col a {
+      font-size: 0.875rem;
+      color: #94a3b8;
+    }
+
+    .footer-links-col a:hover {
+      color: #ffffff;
+      padding-left: 4px;
+    }
+
+    .footer-contact-col p {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8125rem;
+      line-height: 1.6;
+      margin-bottom: 8px;
+      color: #cbd5e1;
+    }
+
+    .footer-contact-col i {
+      width: 14px;
+      height: 14px;
+      color: var(--primary-500);
+      flex-shrink: 0;
+    }
+
+    .footer-bottom-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 28px;
+      font-size: 0.75rem;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .copyright {
+      color: #64748b;
+    }
+
+    .footer-legal {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #64748b;
+    }
+
+    .footer-legal a:hover {
+      color: #cbd5e1;
+    }
+
+    /* ==========================================================================
+       Responsive Breakpoints
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .spline-card {
+        height: 440px;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .overview-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .strategy-bento-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .bento-large, .bento-wide {
+        grid-column: span 1;
+      }
+
+      .bento-stats-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .roadmap-timeline-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .consortium-cards-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-layout-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .related-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-top-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .main-nav {
+        display: none;
+      }
+
+      .mobile-toggle-btn {
+        display: block;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-headline {
+        font-size: 2.125rem;
+      }
+
+      .spline-card {
+        height: 380px;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .roadmap-timeline-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .file-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row, .form-row-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .related-cards-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gov-support-banner {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+      }
+
+      .gov-divider {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar">
+    <div class="announcement-container">
+      <div class="badge-tag">
+        <i data-lucide="sparkles"></i> 2026 국고지원사업 선정
+      </div>
+      <p class="announcement-text">
+        <strong>교육부 · 한국연구재단</strong> 주관 「2026학년도 에이아이디(AID) 전환 중점 전문대학 지원사업」 충청·강원권 연합형 최종 선정!
+      </p>
+      <a href="#overview" class="announcement-link">
+        사업 개요 보기 <i data-lucide="arrow-right"></i>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#" class="brand-logo" aria-label="AIDX 사업단 홈">
+        <div class="logo-icon-box">
+          <span class="logo-symbol">AID</span>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">AIDX 사업단</span>
+          <span class="logo-subtitle">대전보건대 × 우송정보대 연합</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <ul class="nav-list">
+          <li><a href="#overview" class="nav-item">사업 개요</a></li>
+          <li><a href="#strategy" class="nav-item">핵심 추진과제</a></li>
+          <li><a href="#roadmap" class="nav-item">연차별 로드맵</a></li>
+          <li><a href="#consortium" class="nav-item">연합 추진체계</a></li>
+          <li><a href="#secure-drive" class="nav-item nav-highlight"><i data-lucide="lock" class="nav-icon"></i> 보안 자료실</a></li>
+          <li><a href="#contact" class="nav-item">담당자 연락망</a></li>
+          <li><a href="#related-sites" class="nav-item">관련 사이트</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-secondary btn-sm" id="quick-drive-btn">
+          <i data-lucide="folder-git-2"></i>
+          <span>자료실 바로가기</span>
+        </button>
+        <button type="button" class="mobile-toggle-btn" id="mobile-menu-btn" aria-label="메뉴 열기">
+          <i data-lucide="menu" id="menu-icon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <nav class="mobile-nav">
+        <a href="#overview" class="mobile-nav-link">사업 개요</a>
+        <a href="#strategy" class="mobile-nav-link">핵심 추진과제</a>
+        <a href="#roadmap" class="mobile-nav-link">연차별 로드맵</a>
+        <a href="#consortium" class="mobile-nav-link">연합 추진체계</a>
+        <a href="#secure-drive" class="mobile-nav-link text-primary"><i data-lucide="lock"></i> 보안 자료실 (구글 드라이브)</a>
+        <a href="#contact" class="mobile-nav-link">담당자 연락망</a>
+        <a href="#related-sites" class="mobile-nav-link">관련 기관 사이트</a>
+        <div class="mobile-drawer-cta">
+          <a href="#secure-drive" class="btn btn-primary btn-full">
+            <i data-lucide="shield-check"></i> 인가 사용자 로그인
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-glow glow-top"></div>
+      <div class="hero-bg-glow glow-bottom"></div>
+      
+      <div class="hero-container">
+        <!-- Hero Text Content (Left) -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>교육부 · 한국연구재단 국고지원 2026~2027</span>
+          </div>
+
+          <h1 class="hero-headline">
+            인공지능(AI)과 디지털(DX)로<br>
+            <span class="gradient-text">미래 실무형 전문기술인재</span>를<br>
+            선도하는 AIDX 혁신 사업단
+          </h1>
+
+          <p class="hero-subtext">
+            <strong>대전보건대학교(주관)</strong>와 <strong>우송정보대학(참여)</strong>이 연합하여 
+            보건의료 바이오헬스 및 실무 지능정보 기술을 융합합니다. 
+            재학생뿐만 아니라 재직자와 지역주민까지 아우르는 
+            <strong>지역 평생·직업교육의 AI 거점</strong>을 구축합니다.
+          </p>
+
+          <!-- Quick Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#secure-drive" class="btn btn-primary btn-lg" id="hero-drive-cta">
+              <i data-lucide="folder-lock"></i>
+              <span>보안 자료실 (Drive) 접근</span>
+            </a>
+            <a href="#overview" class="btn btn-outline btn-lg">
+              <i data-lucide="file-text"></i>
+              <span>사업계획 요약보기</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="hero-feature-pills">
+            <div class="feature-pill">
+              <i data-lucide="check-circle-2"></i>
+              <span>총 2년 국고 20억 지원</span>
+            </div>
+            <div class="feature-pill">
+              <i data-lucide="check-circle-2"></i>
+              <span>생성형 AI 계정 및 스마트 실습실 보급</span>
+            </div>
+            <div class="feature-pill">
+              <i data-lucide="check-circle-2"></i>
+              <span>충청·강원권 연합형 선정</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero 3D Spline Robot Integration (Right) -->
+        <div class="hero-visual">
+          <div class="spline-card">
+            <!-- Glass Header inside 3D Card -->
+            <div class="spline-card-header">
+              <div class="spline-status">
+                <span class="status-indicator online"></span>
+                <span class="status-label">AIDX Interactive 3D Agent</span>
+              </div>
+              <div class="spline-hint">
+                <i data-lucide="mouse-pointer-click"></i> 마우스 커서를 따라 반응합니다
+              </div>
+            </div>
+
+            <!-- Spline 3D Frame Container -->
+            <div class="spline-frame-wrapper" id="spline-container">
+              <iframe 
+                src="https://my.spline.design/robotfollowcursorforlandingpage-gcnhn5rxdTajAQKFlGZwlfSy/" 
+                frameborder="0" 
+                width="100%" 
+                height="100%"
+                title="AIDX 3D Robot Interactive Agent"
+                allow="autoplay; fullscreen; xr-spatial-tracking"
+                loading="lazy">
+              </iframe>
+              <div class="spline-loading" id="spline-loader">
+                <div class="spinner"></div>
+                <p>3D 인터랙티브 에이전트 로딩 중...</p>
+              </div>
+            </div>
+
+            <!-- Floating Data Widgets on 3D Card -->
+            <div class="floating-widget widget-left">
+              <div class="widget-icon bg-blue"><i data-lucide="cpu"></i></div>
+              <div class="widget-content">
+                <span class="widget-title">AI 특화 인프라</span>
+                <span class="widget-value">스마트 AI 실습실 구축</span>
+              </div>
+            </div>
+
+            <div class="floating-widget widget-right">
+              <div class="widget-icon bg-purple"><i data-lucide="activity"></i></div>
+              <div class="widget-content">
+                <span class="widget-title">보건의료 × AI 융합</span>
+                <span class="widget-value">X+AI 맞춤형 커리큘럼</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Metrics Stats Section -->
+    <section class="stats-section">
+      <div class="section-container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon-wrapper">
+              <i data-lucide="landmark"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">20<span class="stat-unit">억 원</span></span>
+              <span class="stat-label">총 사업비 지원 (2년)</span>
+              <span class="stat-desc">2026년 기준 사업단별 10억원</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-wrapper">
+              <i data-lucide="calendar-range"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">24<span class="stat-unit">개월</span></span>
+              <span class="stat-label">사업 수행 기간</span>
+              <span class="stat-desc">2026. 05 ~ 2028. 02</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-wrapper">
+              <i data-lucide="users-2"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">연합형<span class="stat-unit">2개 대학</span></span>
+              <span class="stat-label">추진 컨소시엄</span>
+              <span class="stat-desc">대전보건대(주관) × 우송정보대(참여)</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-wrapper">
+              <i data-lucide="award"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">100<span class="stat-unit">%</span></span>
+              <span class="stat-label">실무형 AI 교육 지원</span>
+              <span class="stat-desc">재학생 전공연계 + 재직자·지역주민</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section overview-section" id="overview">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">PROJECT OVERVIEW</span>
+          <h2 class="section-title">AIDX 전환 중점 전문대학 지원사업이란?</h2>
+          <p class="section-subtitle">
+            교육부와 한국연구재단이 주관하여 전문대학을 통해 다양한 전공의 재학생, 지역주민, 재직자까지<br>
+            인공지능(AI)을 실질적으로 배우고 산업 현장에서 활용할 수 있도록 지원하는 국가 핵심 재정지원사업입니다.
+          </p>
+        </div>
+
+        <div class="overview-grid">
+          <!-- Overview Card 1 -->
+          <div class="overview-card">
+            <div class="card-icon"><i data-lucide="target"></i></div>
+            <h3>추진 배경 및 목적</h3>
+            <p>
+              AI·디지털 전환(DX) 시대 도래에 따라 지역 산업체의 AI 인력 수요가 급증하고 있습니다. 
+              단순 도구 활용을 넘어 <strong>산업 현장의 실질적인 문제를 AI로 해결하는 실무형 전문기술인재</strong>를 집중 양성합니다.
+            </p>
+            <ul class="card-list">
+              <li><i data-lucide="check"></i> 충청·강원권 지역 산업체 연계 AI 수요 기술 반영</li>
+              <li><i data-lucide="check"></i> 전공별 AI 융합 교육을 통한 청년 취업 역량 극대화</li>
+            </ul>
+          </div>
+
+          <!-- Overview Card 2 -->
+          <div class="overview-card active-card">
+            <div class="card-icon"><i data-lucide="layers"></i></div>
+            <h3>연합형 사업단 특화 방향</h3>
+            <p>
+              <strong>대전보건대학교</strong>의 보건·의료·바이오 헬스케어 독보적 인프라와 
+              <strong>우송정보대학</strong>의 ICT 지능정보 실무 기술을 결합하여, 
+              충청권 최고의 <strong>「보건의료 × AI·DX 융합 특화 모형」</strong>을 완성합니다.
+            </p>
+            <ul class="card-list">
+              <li><i data-lucide="check"></i> 대전보건대: 메디컬·헬스케어 AI 및 스마트 바이오 실습</li>
+              <li><i data-lucide="check"></i> 우송정보대: 산업 연계 지능정보 소프트웨어 및 DX 응용</li>
+            </ul>
+          </div>
+
+          <!-- Overview Card 3 -->
+          <div class="overview-card">
+            <div class="card-icon"><i data-lucide="compass"></i></div>
+            <h3>평생·직업교육 지역 거점화</h3>
+            <p>
+              대학의 울타리를 넘어 <strong>지역 재직자 단기 직무연계(X+AI) 과정</strong>과 
+              <strong>지역주민 대상 단기 AI 기초 소양 교육</strong>을 상설 운영하여 
+              지역사회 평생직업교육의 든든한 허브 역할을 수행합니다.
+            </p>
+            <ul class="card-list">
+              <li><i data-lucide="check"></i> 지역 소상공인 및 중소기업 재직자 맞춤형 AI 리터러시</li>
+              <li><i data-lucide="check"></i> 대학 첨단 AI 실습 시설 및 생성형 AI 인프라 개방</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 Core Strategies Section -->
+    <section class="section strategy-section" id="strategy">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">CORE STRATEGIES</span>
+          <h2 class="section-title">4대 핵심 세부 이행 계획</h2>
+          <p class="section-subtitle">
+            인프라 구축부터 교육과정 혁신, 특화 모델 개발, 지역 상생 거점화까지 빈틈없는 체계를 가동합니다.
+          </p>
+        </div>
+
+        <div class="strategy-bento-grid">
+          <!-- Bento Box 1 -->
+          <div class="bento-card bento-large">
+            <div class="bento-header">
+              <span class="bento-num">01</span>
+              <div class="bento-badge">인프라 고도화</div>
+            </div>
+            <div class="bento-body">
+              <div class="bento-icon"><i data-lucide="server"></i></div>
+              <h3>AI 교육 기반 마련 및 생성형 AI 인프라 보급</h3>
+              <p>
+                대학 내 첨단 <strong>AI 실습실</strong> 및 <strong>스마트 인터랙티브 강의실</strong>을 구축하고, 
+                학생과 교직원 전원에게 상용 <strong>생성형 AI(ChatGPT, Claude 등) 계정을 보급</strong>하여 
+                일상 학습과 연구에 AI를 상시 활용할 수 있는 환경을 조성합니다.
+              </p>
+              <div class="bento-tags">
+                <span>#스마트AI실습실</span>
+                <span>#생성형AI계정보급</span>
+                <span>#고성능GPU서버</span>
+                <span>#AI학습지원플랫폼</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Box 2 -->
+          <div class="bento-card">
+            <div class="bento-header">
+              <span class="bento-num">02</span>
+              <div class="bento-badge">교육과정 혁신</div>
+            </div>
+            <div class="bento-body">
+              <div class="bento-icon"><i data-lucide="graduation-cap"></i></div>
+              <h3>수요자 맞춤형 AI 교육과정 개발·운영</h3>
+              <p>
+                재학생 전공·교양 소단위(마이크로디그리)·모듈형 과정을 통해 
+                <strong>기초 도구 활용 → 협업/소통 → 데이터 기반 결정 → 전공-AI 통합</strong>으로 이어지는 단계별 역량을 배양합니다.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bento Box 3 -->
+          <div class="bento-card">
+            <div class="bento-header">
+              <span class="bento-num">03</span>
+              <div class="bento-badge">교직원 역량 강화</div>
+            </div>
+            <div class="bento-body">
+              <div class="bento-icon"><i data-lucide="user-check"></i></div>
+              <h3>AI 기반 교수학습법 및 스마트 행정 혁신</h3>
+              <p>
+                교원의 AI 수업 설계 및 학생 맞춤형 학습 진단 역량을 높이고, 
+                대학 행정 전반에 AI 자동화 도구를 적극 도입하여 대학 행정 효율성을 대폭 개선합니다.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bento Box 4 -->
+          <div class="bento-card bento-wide">
+            <div class="bento-header">
+              <span class="bento-num">04</span>
+              <div class="bento-badge">대학 특화 모델</div>
+            </div>
+            <div class="bento-body">
+              <div class="bento-icon"><i data-lucide="dna"></i></div>
+              <h3>대전보건대 × 우송정보대 「보건의료·ICT 융합 AIDX 특화 모델」</h3>
+              <p>
+                보건의료 데이터 분석, 스마트 헬스케어 디바이스, 의료 영상 AI 보조 실무 등 
+                대전보건대의 보건 특화 역량과 우송정보대의 IT/실무 기술을 결합하여 독보적인 고등직업교육 산학협력 모델을 구축합니다.
+              </p>
+              <div class="bento-stats-row">
+                <div class="bento-stat-item">
+                  <strong>학과 구조 개선</strong>
+                  <span>전공별 AI 융합 트랙 신설</span>
+                </div>
+                <div class="bento-stat-item">
+                  <strong>데이터 기반 학생지원</strong>
+                  <span>학습 위기 조기진단 AI 케어</span>
+                </div>
+                <div class="bento-stat-item">
+                  <strong>산학협력 교육혁신</strong>
+                  <span>지역 산업체 현장 캡스톤</span>
+                </div>
+                <div class="bento-stat-item">
+                  <strong>학사제도 유연화</strong>
+                  <span>나노디그리 및 집중이수제</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="section roadmap-section" id="roadmap">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">2-YEAR ROADMAP</span>
+          <h2 class="section-title">연차별 단계적 추진 로드맵 (2026 ~ 2028)</h2>
+          <p class="section-subtitle">
+            1차년도 인프라 및 기반 구축부터 2차년도 성과 창출 및 전국 단위 확산까지 체계적으로 추진합니다.
+          </p>
+        </div>
+
+        <!-- Roadmap Switcher Tabs -->
+        <div class="roadmap-tab-nav">
+          <button class="roadmap-tab-btn active" data-target="year-1">
+            <span class="tab-badge">1차년도</span>
+            <span class="tab-title">2026.05 ~ 2027.02 (기반 구축)</span>
+          </button>
+          <button class="roadmap-tab-btn" data-target="year-2">
+            <span class="tab-badge">2차년도</span>
+            <span class="tab-title">2027.03 ~ 2028.02 (성과창출 및 확산)</span>
+          </button>
+        </div>
+
+        <!-- Roadmap Content Cards -->
+        <div class="roadmap-panel active" id="year-1">
+          <div class="roadmap-timeline-grid">
+            <div class="timeline-box">
+              <div class="timeline-step">STEP 01</div>
+              <h4>AI 인프라 및 환경 조성</h4>
+              <p>스마트 AI 실습실, 최첨단 GPU 서버 및 협업형 인터랙티브 강의실 구축 완료</p>
+              <div class="timeline-metric"><i data-lucide="check-circle"></i> AI 실습 인프라 완비</div>
+            </div>
+
+            <div class="timeline-box">
+              <div class="timeline-step">STEP 02</div>
+              <h4>생성형 AI 계정 및 라이선스 보급</h4>
+              <p>전체 재학생 및 교직원 대상 생성형 AI 계정 및 프롬프트 활용 가이드 배포</p>
+              <div class="timeline-metric"><i data-lucide="check-circle"></i> 전교생 계정 100% 보급</div>
+            </div>
+
+            <div class="timeline-box">
+              <div class="timeline-step">STEP 03</div>
+              <h4>소단위 모듈형 AI 교육과정 개발</h4>
+              <p>AI 기초 리터러시 및 보건·IT 융합 소단위 마이크로디그리 교과목 개발</p>
+              <div class="timeline-metric"><i data-lucide="check-circle"></i> 표준 교육과정 12종 개발</div>
+            </div>
+
+            <div class="timeline-box">
+              <div class="timeline-step">STEP 04</div>
+              <h4>연합 사업단 거버넌스 출범</h4>
+              <p>대전보건대-우송정보대 공동 AIDX 운영위원회 및 성과관리 분과 가동</p>
+              <div class="timeline-metric"><i data-lucide="check-circle"></i> 연합 산학 협의체 구성</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Year 2 -->
+        <div class="roadmap-panel" id="year-2">
+          <div class="roadmap-timeline-grid">
+            <div class="timeline-box">
+              <div class="timeline-step">STEP 05</div>
+              <h4>전공 연계 X+AI 심화과정 본격 운영</h4>
+              <p>보건의료, 간호, 임상병리, 방사선 및 IT 전공별 AI 실무 프로젝트 심화 실습</p>
+              <div class="timeline-metric"><i data-lucide="trending-up"></i> 전공 연계율 80% 달성</div>
+            </div>
+
+            <div class="timeline-box">
+              <div class="timeline-step">STEP 06</div>
+              <h4>재직자·지역주민 AI 평생교육 상설화</h4>
+              <p>충청권 지역 산업체 재직자 단기 직무 AI 과정 및 소상공인 AI 마케팅 교육 개설</p>
+              <div class="timeline-metric"><i data-lucide="trending-up"></i> 지역 수혜 인원 500명+</div>
+            </div>
+
+            <div class="timeline-box">
+              <div class="timeline-step">STEP 07</div>
+              <h4>AIDX 성과 페스티벌 & 캡스톤 경진대회</h4>
+              <p>학생 AI 창작 프로젝트 및 산학협력 실증 결과물 전시, 우수 성과 포상</p>
+              <div class="timeline-metric"><i data-lucide="trending-up"></i> 우수 프로젝트 30건 선정</div>
+            </div>
+
+            <div class="timeline-box">
+              <div class="timeline-step">STEP 08</div>
+              <h4>우수 특화모델 전국 전문대 확산</h4>
+              <p>한국연구재단 연계 연차평가 최우수 등급 획득 및 전국 전문대 확산 백서 발간</p>
+              <div class="timeline-metric"><i data-lucide="trending-up"></i> 표준 운영 매뉴얼 공유</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consortium Section -->
+    <section class="section consortium-section" id="consortium">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">CONSORTIUM & GOVERNANCE</span>
+          <h2 class="section-title">대전보건대학교 × 우송정보대학 연합 추진 체계</h2>
+          <p class="section-subtitle">
+            주관기관과 참여기관의 강점을 유기적으로 결합하여 최고의 시너지를 창출합니다.
+          </p>
+        </div>
+
+        <div class="consortium-cards-grid">
+          <!-- Leading Univ: Daejeon Health Sciences -->
+          <div class="consortium-card primary-border">
+            <div class="consortium-badge leader">주관 연구개발기관</div>
+            <div class="consortium-logo-box">
+              <i data-lucide="cross" class="icon-accent"></i>
+              <h3>대전보건대학교</h3>
+            </div>
+            <p class="consortium-role-desc">
+              대한민국 보건의료 특성화 선도 전문대학으로서 <strong>AIDX 사업단 총괄 관리</strong>, 
+              <strong>보건의료 바이오헬스 AI 인프라 구축</strong>, <strong>메디컬 AI 융합 교육과정 총괄</strong>을 담당합니다.
+            </p>
+            <div class="consortium-features">
+              <div class="feature-item"><i data-lucide="check"></i> 총괄 사업비 관리 및 사업단 본부 운영</div>
+              <div class="feature-item"><i data-lucide="check"></i> 바이오헬스케어 AI 스마트 실습실 구축</div>
+              <div class="feature-item"><i data-lucide="check"></i> 임상·보건 데이터 분석 마이크로디그리 운영</div>
+            </div>
+            <a href="https://www.hit.ac.kr" target="_blank" rel="noopener noreferrer" class="consortium-link">
+              대전보건대학교 공식 웹사이트 <i data-lucide="external-link"></i>
+            </a>
+          </div>
+
+          <!-- Partner Univ: Woosong College -->
+          <div class="consortium-card secondary-border">
+            <div class="consortium-badge partner">참여 연구개발기관</div>
+            <div class="consortium-logo-box">
+              <i data-lucide="laptop" class="icon-accent"></i>
+              <h3>우송정보대학</h3>
+            </div>
+            <p class="consortium-role-desc">
+              실무 직업교육의 대표 대학으로서 <strong>지능정보 소프트웨어 실습 인프라</strong>, 
+              <strong>산업체 맞춤형 X+AI 실무 교육과정</strong>, <strong>지역 재직자 평생직업교육 거점 운영</strong>을 담당합니다.
+            </p>
+            <div class="consortium-features">
+              <div class="feature-item"><i data-lucide="check"></i> 지능정보 SW 및 DX 실무 커리큘럼 개발</div>
+              <div class="feature-item"><i data-lucide="check"></i> 지역 산업체 연계 산학협력 캡스톤 프로젝트</div>
+              <div class="feature-item"><i data-lucide="check"></i> 재직자·지역주민 단기 직무연계(X+AI) 과정 운영</div>
+            </div>
+            <a href="https://www.wsi.ac.kr" target="_blank" rel="noopener noreferrer" class="consortium-link">
+              우송정보대학 공식 웹사이트 <i data-lucide="external-link"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Government & Foundation Banner -->
+        <div class="gov-support-banner">
+          <div class="gov-item">
+            <div class="gov-icon"><i data-lucide="shield"></i></div>
+            <div class="gov-text">
+              <span class="gov-label">주관 부처</span>
+              <strong class="gov-name">교육부 (평생교육지원관 전문대학지원과)</strong>
+            </div>
+          </div>
+          <div class="gov-divider"></div>
+          <div class="gov-item">
+            <div class="gov-icon"><i data-lucide="award"></i></div>
+            <div class="gov-text">
+              <span class="gov-label">전담 기관</span>
+              <strong class="gov-name">한국연구재단 (전문대학지원팀)</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Protected Document Portal (Google Drive Integration) -->
+    <section class="section drive-section" id="secure-drive">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag locked-tag"><i data-lucide="lock"></i> RESTRICTED ARCHIVE</span>
+          <h2 class="section-title">AIDX 사업단 보안 자료실 (구글 드라이브 연동)</h2>
+          <p class="section-subtitle">
+            본 자료실은 <strong>사업 총괄책임자, 참여연구원, 전담기관 평가위원</strong> 등 
+            인가된 사용자만 열람 가능한 사업계획서, 회의록, 결과보고서 및 공통 서식 저장소입니다.
+          </p>
+        </div>
+
+        <!-- Locked Gate State (Default when not logged in) -->
+        <div class="drive-gate-card" id="drive-gate">
+          <div class="gate-icon-wrapper">
+            <i data-lucide="shield-alert"></i>
+          </div>
+          <div class="gate-info">
+            <h3>인가된 관계자 보안 인증</h3>
+            <p>
+              국고사업 보안 지침에 따라 사업계획서 원문, 회의록, 연구비 집행 내역 등 비공개 자료는 
+              패스코드 인증 후 구글 드라이브(Google Drive) 연동 저장소에서 안전하게 열람하실 수 있습니다.
+            </p>
+            <div class="quick-pass-hint">
+              <span class="hint-label"><i data-lucide="info"></i> 테스트용 빠른 접속 안내:</span>
+              <span class="hint-code">기본 패스코드: <strong>aidx2026</strong></span>
+            </div>
+          </div>
+
+          <form class="gate-form" id="gate-auth-form">
+            <div class="form-row">
+              <div class="input-group">
+                <label for="user-role-select">접근 권한 역할</label>
+                <select id="user-role-select" class="form-select">
+                  <option value="총괄책임자">총괄책임자 (대전보건대)</option>
+                  <option value="참여연구원" selected>참여연구원 (우송정보대/공동)</option>
+                  <option value="전담기관 평가위원">전담기관 평가위원 (교육부/연구재단)</option>
+                  <option value="사업단 행정간사">사업단 행정/예산 간사</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <label for="passcode-input">보안 패스코드</label>
+                <div class="password-input-wrapper">
+                  <input type="password" id="passcode-input" class="form-input" placeholder="패스코드를 입력하세요 (예: aidx2026)" required>
+                  <button type="button" class="btn-toggle-pw" id="toggle-pw-btn" aria-label="비밀번호 보기/숨기기">
+                    <i data-lucide="eye" id="eye-icon"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="gate-actions">
+              <button type="submit" class="btn btn-primary btn-md" id="auth-submit-btn">
+                <i data-lucide="key"></i>
+                <span>보안 인증 및 자료실 열기</span>
+              </button>
+              <button type="button" class="btn btn-outline btn-md" id="quick-login-btn">
+                <i data-lucide="zap"></i>
+                <span>원클릭 데모 로그인</span>
+              </button>
+            </div>
+            <div class="auth-error-msg" id="auth-error-msg">
+              <i data-lucide="alert-circle"></i> 패스코드가 일치하지 않습니다. (테스트: aidx2026)
+            </div>
+          </form>
+        </div>
+
+        <!-- Unlocked Drive Hub State (Shown after Auth) -->
+        <div class="drive-hub-container hidden" id="drive-hub">
+          <!-- Hub User Status Bar -->
+          <div class="hub-user-bar">
+            <div class="user-profile">
+              <div class="user-avatar"><i data-lucide="user-check"></i></div>
+              <div class="user-meta">
+                <span class="user-role-badge" id="current-role-badge">참여연구원 (우송정보대/공동)</span>
+                <span class="user-session-text">보안 세션 활성화됨 (Google Drive API Ready)</span>
+              </div>
+            </div>
+            <div class="hub-actions">
+              <button type="button" class="btn btn-secondary btn-sm" id="configure-drive-url-btn">
+                <i data-lucide="settings"></i> 구글 드라이브 URL 설정
+              </button>
+              <button type="button" class="btn btn-danger btn-sm" id="logout-btn">
+                <i data-lucide="log-out"></i> 로그아웃
+              </button>
+            </div>
+          </div>
+
+          <!-- Google Drive Linked Banner -->
+          <div class="drive-connect-banner">
+            <div class="drive-banner-left">
+              <div class="drive-logo-box">
+                <svg width="28" height="28" viewBox="0 0 87.3 78" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z" fill="#0066da"/>
+                  <path d="m43.65 25-13.75-23.8c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44a9.06 9.06 0 0 0 -1.2 4.5h27.5z" fill="#00ac47"/>
+                  <path d="m73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5h-27.5l5.85 10.15z" fill="#ea4335"/>
+                  <path d="m43.65 25 13.75-23.8c-1.35-.8-2.9-1.2-4.5-1.2h-18.5c-1.6 0-3.15.45-4.5 1.2z" fill="#00832d"/>
+                  <path d="m59.8 53h-32.5l-13.75 23.8c1.35.8 2.9 1.2 4.5 1.2h50.9c1.6 0 3.15-.45 4.5-1.2z" fill="#2684fc"/>
+                  <path d="m73.4 26.5-12.7-22c-.8-1.4-1.95-2.5-3.3-3.3l-13.75 23.8 16.25 28h27.5c0-1.55-.4-3.1-1.2-4.5z" fill="#ffba00"/>
+                </svg>
+              </div>
+              <div class="drive-banner-info">
+                <h4>AIDX 국고사업단 공식 공유 드라이브</h4>
+                <p id="current-drive-folder-name">📁 [AIDX_공동연구단] 2026~2027_사업관리_공식폴더</p>
+              </div>
+            </div>
+            <a href="https://drive.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="main-google-drive-link">
+              <i data-lucide="external-link"></i> 구글 드라이브 전체 열기
+            </a>
+          </div>
+
+          <!-- File Filter Tabs & Search -->
+          <div class="drive-toolbar">
+            <div class="filter-tabs">
+              <button class="filter-btn active" data-category="all">전체 (All)</button>
+              <button class="filter-btn" data-category="plan">사업계획서/협약서</button>
+              <button class="filter-btn" data-category="minutes">정기 회의록</button>
+              <button class="filter-btn" data-category="report">성과/보고서</button>
+              <button class="filter-btn" data-category="forms">연구비/공통서식</button>
+            </div>
+            <div class="search-box">
+              <i data-lucide="search"></i>
+              <input type="text" id="file-search-input" placeholder="파일명 또는 키워드 검색...">
+            </div>
+          </div>
+
+          <!-- File Cards List -->
+          <div class="file-grid" id="file-list-container">
+            <!-- Files populated via JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts Directory Section -->
+    <section class="section contact-section" id="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">DIRECTORY & INQUIRY</span>
+          <h2 class="section-title">AIDX 사업단 담당자 연락망 및 문의</h2>
+          <p class="section-subtitle">
+            과제 추진 관련 행정, 예산, 교육과정, 산학협력 문의처를 안내해 드립니다.
+          </p>
+        </div>
+
+        <div class="contact-layout-grid">
+          <!-- Left: Official POC Directory Cards -->
+          <div class="poc-directory">
+            <h3 class="directory-heading"><i data-lucide="building-2"></i> 전담기관 및 사업단 공식 연락처</h3>
+
+            <div class="poc-cards-list">
+              <!-- Gov POC: 교육부 -->
+              <div class="poc-card">
+                <div class="poc-header">
+                  <div class="poc-badge gov">주관부처</div>
+                  <span class="poc-affiliation">교육부 평생교육지원관 전문대학지원과</span>
+                </div>
+                <div class="poc-body">
+                  <div class="poc-person">
+                    <strong>이운식 과장</strong> / <strong>김대성 사무관</strong>
+                  </div>
+                  <div class="poc-contacts">
+                    <a href="tel:044-203-6415" class="contact-link"><i data-lucide="phone"></i> 044-203-6415</a>
+                    <a href="tel:044-203-6420" class="contact-link"><i data-lucide="phone"></i> 044-203-6420</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Gov POC: 한국연구재단 -->
+              <div class="poc-card">
+                <div class="poc-header">
+                  <div class="poc-badge gov">전담기관</div>
+                  <span class="poc-affiliation">한국연구재단 전문대학지원팀</span>
+                </div>
+                <div class="poc-body">
+                  <div class="poc-person">
+                    <strong>김현희 팀장</strong> / <strong>윤원형 연구원</strong>
+                  </div>
+                  <div class="poc-contacts">
+                    <a href="tel:042-869-6420" class="contact-link"><i data-lucide="phone"></i> 042-869-6420</a>
+                    <a href="tel:042-869-6424" class="contact-link"><i data-lucide="phone"></i> 042-869-6424</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Univ POC: 대전보건대학교 -->
+              <div class="poc-card highlight-poc">
+                <div class="poc-header">
+                  <div class="poc-badge leader">주관대학</div>
+                  <span class="poc-affiliation">대전보건대학교 AIDX 사업단 총괄본부</span>
+                </div>
+                <div class="poc-body">
+                  <div class="poc-person">
+                    <strong>사업 총괄책임자 (PM)</strong> · 행정/연구비 지원실
+                  </div>
+                  <div class="poc-contacts">
+                    <a href="tel:042-670-9000" class="contact-link"><i data-lucide="phone"></i> 042-670-9000 (사업단 직통)</a>
+                    <a href="mailto:aidx@hit.ac.kr" class="contact-link"><i data-lucide="mail"></i> aidx@hit.ac.kr</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Univ POC: 우송정보대학 -->
+              <div class="poc-card highlight-poc">
+                <div class="poc-header">
+                  <div class="poc-badge partner">참여대학</div>
+                  <span class="poc-affiliation">우송정보대학 AIDX 실무사업추진단</span>
+                </div>
+                <div class="poc-body">
+                  <div class="poc-person">
+                    <strong>실무 책임자</strong> · 산학협력/교육과정 개발팀
+                  </div>
+                  <div class="poc-contacts">
+                    <a href="tel:042-629-6114" class="contact-link"><i data-lucide="phone"></i> 042-629-6114 (산학협력관)</a>
+                    <a href="mailto:aidx@wsi.ac.kr" class="contact-link"><i data-lucide="mail"></i> aidx@wsi.ac.kr</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Online Inquiry Form -->
+          <div class="inquiry-box">
+            <div class="inquiry-header">
+              <div class="inquiry-icon"><i data-lucide="message-square"></i></div>
+              <div>
+                <h3>온라인 사업 문의 및 자료 열람 신청</h3>
+                <p>궁금하신 사항이나 협약 서류 열람 요청을 남겨주시면 사업단 담당자가 신속히 답변드립니다.</p>
+              </div>
+            </div>
+
+            <form class="inquiry-form" id="quick-inquiry-form">
+              <div class="form-group">
+                <label for="sender-name">성명 / 담당자명 <span class="req">*</span></label>
+                <input type="text" id="sender-name" class="form-input" placeholder="홍길동" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-org">소속 기관 / 부서 <span class="req">*</span></label>
+                <input type="text" id="sender-org" class="form-input" placeholder="예: 대전보건대학교 간호학과 / OO기업" required>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="sender-email">이메일 주소 <span class="req">*</span></label>
+                  <input type="email" id="sender-email" class="form-input" placeholder="example@domain.ac.kr" required>
+                </div>
+                <div class="form-group">
+                  <label for="sender-phone">연락처</label>
+                  <input type="tel" id="sender-phone" class="form-input" placeholder="010-1234-5678">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inquiry-type">문의 유형</label>
+                <select id="inquiry-type" class="form-select">
+                  <option value="교육과정">AI 교육과정 및 마이크로디그리 문의</option>
+                  <option value="보안자료">보안 자료실 열람 권한 승인 요청</option>
+                  <option value="연구비집행">연구비 집행 및 행정 서식 문의</option>
+                  <option value="산학협력">지역 산업체 연계 산학협력 제휴</option>
+                  <option value="기타">기타 일반 문의</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message">문의 내용 <span class="req">*</span></label>
+                <textarea id="sender-message" class="form-textarea" rows="4" placeholder="문의하실 세부 내용을 입력해주세요..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" id="submit-inquiry-btn">
+                <i data-lucide="send"></i>
+                <span>문의 내용 발송하기</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Websites Section (User Requested) -->
+    <section class="section related-section" id="related-sites">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">AFFILIATED SITES</span>
+          <h2 class="section-title">주요 관련 기관 및 대학 바로가기</h2>
+          <p class="section-subtitle">
+            AIDX 사업과 관련된 정부 부처, 전담 연구재단 및 연합 참여 대학 공식 포털입니다.
+          </p>
+        </div>
+
+        <div class="related-cards-grid">
+          <!-- 1. 한국연구재단 -->
+          <a href="https://www.nrf.re.kr" target="_blank" rel="noopener noreferrer" class="related-card">
+            <div class="related-icon bg-nrf">
+              <i data-lucide="award"></i>
+            </div>
+            <div class="related-info">
+              <h4>한국연구재단 (NRF)</h4>
+              <p>National Research Foundation of Korea</p>
+              <span class="related-sub">에이아이디(AID) 지원사업 전담평가관리</span>
+            </div>
+            <div class="related-arrow"><i data-lucide="arrow-up-right"></i></div>
+          </a>
+
+          <!-- 2. 대전보건대학교 -->
+          <a href="https://www.hit.ac.kr" target="_blank" rel="noopener noreferrer" class="related-card">
+            <div class="related-icon bg-hit">
+              <i data-lucide="graduation-cap"></i>
+            </div>
+            <div class="related-info">
+              <h4>대전보건대학교</h4>
+              <p>Daejeon Health Sciences College</p>
+              <span class="related-sub">AIDX 국고사업 주관 연구개발기관</span>
+            </div>
+            <div class="related-arrow"><i data-lucide="arrow-up-right"></i></div>
+          </a>
+
+          <!-- 3. 우송정보대학 -->
+          <a href="https://www.wsi.ac.kr" target="_blank" rel="noopener noreferrer" class="related-card">
+            <div class="related-icon bg-wsi">
+              <i data-lucide="laptop"></i>
+            </div>
+            <div class="related-info">
+              <h4>우송정보대학</h4>
+              <p>Woosong College</p>
+              <span class="related-sub">AIDX 국고사업 참여 연구개발기관</span>
+            </div>
+            <div class="related-arrow"><i data-lucide="arrow-up-right"></i></div>
+          </a>
+
+          <!-- 4. 대한민국 교육부 -->
+          <a href="https://www.moe.go.kr" target="_blank" rel="noopener noreferrer" class="related-card">
+            <div class="related-icon bg-moe">
+              <i data-lucide="landmark"></i>
+            </div>
+            <div class="related-info">
+              <h4>대한민국 교육부</h4>
+              <p>Ministry of Education</p>
+              <span class="related-sub">평생교육지원관 전문대학지원과</span>
+            </div>
+            <div class="related-arrow"><i data-lucide="arrow-up-right"></i></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Document Preview Modal -->
+  <div class="modal-overlay" id="doc-preview-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge" id="modal-doc-type">PDF</span>
+          <h3 id="modal-doc-title">사업계획서 요약본 미리보기</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="close-preview-modal-btn" aria-label="닫기">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <div class="modal-body" id="modal-doc-content">
+        <!-- Document rendered dynamically -->
+      </div>
+
+      <div class="modal-footer">
+        <div class="modal-footer-meta" id="modal-doc-meta">
+          <span>최종 수정: 2026.05.15</span> · <span>용량: 2.4 MB</span>
+        </div>
+        <div class="modal-footer-actions">
+          <a href="#" target="_blank" id="modal-drive-link" class="btn btn-outline btn-sm">
+            <i data-lucide="external-link"></i> 구글 드라이브에서 열기
+          </a>
+          <button type="button" class="btn btn-primary btn-sm" id="modal-download-btn">
+            <i data-lucide="download"></i> 파일 다운로드
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Google Drive URL Configuration Modal -->
+  <div class="modal-overlay" id="drive-config-modal">
+    <div class="modal-card modal-sm">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <i data-lucide="settings" class="icon-accent"></i>
+          <h3>구글 드라이브(Google Drive) 링크 설정</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="close-config-modal-btn" aria-label="닫기">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p class="config-desc">
+          사업단 전용 구글 드라이브 폴더 공유 링크를 입력하시면, 
+          포털 내의 모든 [구글 드라이브 전체 열기] 및 파일 바로가기 링크가 해당 폴더로 자동 연결됩니다.
+        </p>
+        <form id="drive-config-form">
+          <div class="form-group">
+            <label for="custom-folder-name">드라이브 폴더명</label>
+            <input type="text" id="custom-folder-name" class="form-input" value="📁 [AIDX_공동연구단] 2026~2027_사업관리_공식폴더" required>
+          </div>
+          <div class="form-group">
+            <label for="custom-drive-url">구글 드라이브 공유 폴더 URL</label>
+            <input type="url" id="custom-drive-url" class="form-input" placeholder="https://drive.google.com/drive/folders/..." value="https://drive.google.com" required>
+          </div>
+          <div class="modal-footer-actions mt-4">
+            <button type="submit" class="btn btn-primary btn-full">
+              <i data-lucide="check"></i> 설정 저장 및 즉시 반영
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top-grid">
+        <!-- Footer Brand Info -->
+        <div class="footer-brand-col">
+          <div class="footer-brand-logo">
+            <div class="logo-icon-box sm">
+              <span class="logo-symbol">AID</span>
+            </div>
+            <span class="footer-brand-title">AIDX 혁신 선도 사업단</span>
+          </div>
+          <p class="footer-notice-text">
+            본 사업은 <strong>교육부</strong> 및 <strong>한국연구재단</strong>의 
+            「2026학년도 에이아이디(AID) 전환 중점 전문대학 지원사업」의 재정 지원을 받아 수행됩니다.
+          </p>
+          <div class="footer-consortium-names">
+            <span><strong>주관기관:</strong> 대전보건대학교 AIDX 사업단</span>
+            <span><strong>참여기관:</strong> 우송정보대학 AIDX 사업단</span>
+          </div>
+        </div>
+
+        <!-- Footer Quick Links -->
+        <div class="footer-links-col">
+          <h4>사업단 바로가기</h4>
+          <ul>
+            <li><a href="#overview">사업 개요 및 목표</a></li>
+            <li><a href="#strategy">4대 세부 이행계획</a></li>
+            <li><a href="#roadmap">연차별 추진 로드맵</a></li>
+            <li><a href="#consortium">연합 거버넌스 체계</a></li>
+            <li><a href="#secure-drive">🔒 보안 구글 드라이브 자료실</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Contact Info -->
+        <div class="footer-contact-col">
+          <h4>사업단 본부 정보</h4>
+          <p><i data-lucide="map-pin"></i> (34504) 대전광역시 동구 충정로 21 대전보건대학교 AIDX 사업단</p>
+          <p><i data-lucide="phone"></i> 대표 전화: 042-670-9000 | FAX: 042-670-9009</p>
+          <p><i data-lucide="mail"></i> 사업단 공식 문의: aidx@hit.ac.kr</p>
+          <p><i data-lucide="calendar"></i> 사업 기간: 2026년 5월 ~ 2028년 2월 (2년)</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="copyright">© 2026 AIDX Consortium (Daejeon Health Sciences College & Woosong College). All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="#">개인정보처리방침</a>
+          <span>·</span>
+          <a href="#">국고사업 연구보안지침</a>
+          <span>·</span>
+          <a href="#">이메일무단수집거부</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Embedded Standalone Application JavaScript -->
+  <script>
+    /**
+     * AIDX 사업단 공식 웹 포털 - Main Application Logic (Single File Bundle)
+     * 대전보건대학교(주관) × 우송정보대학(참여) 연합 사업단
+     */
+
+    // 1. Initial State & File Repository Data
+    const DEFAULT_PASSCODE = 'aidx2026';
+    let currentGoogleDriveUrl = 'https://drive.google.com';
+    let currentDriveFolderName = '📁 [AIDX_공동연구단] 2026~2027_사업관리_공식폴더';
+
+    // Mock Protected Files matching AIDX 국고사업
+    const PROJECT_FILES = [
+      {
+        id: 'plan-01',
+        title: '[최종본] 2026학년도 에이아이디(AID) 전환 중점 전문대학 지원사업 계획서',
+        category: 'plan',
+        fileType: 'pdf',
+        size: '14.8 MB',
+        date: '2026.05.08',
+        authRole: '전체 인가자',
+        author: 'AIDX 사업단 총괄본부 (대전보건대)',
+        summary: `
+          <h4>【사업계획서 핵심 요약】</h4>
+          <div class="doc-section-block">
+            <h5>1. 사업명 및 추진 기간</h5>
+            <p>• 사업명: 2026학년도 에이아이디(AID, AI+Digital) 전환 중점 전문대학 지원사업 (충청·강원권 연합형)</p>
+            <p>• 사업기간: 2026년 5월 1일 ~ 2028년 2월 29일 (총 24개월)</p>
+            <p>• 주관대학: 대전보건대학교 / 참여대학: 우송정보대학</p>
+          </div>
+          <div class="doc-section-block">
+            <h5>2. 사업비 구성 (연차별 10억원, 총 20억원)</h5>
+            <ul>
+              <li>1차년도: AI 스마트 실습실 구축, 생성형 AI 계정 보급, 소단위 모듈형 교육과정 개발</li>
+              <li>2차년도: 전공 연계 X+AI 심화과정 운영, 재직자/지역주민 단기 직무과정, 성과 확산</li>
+            </ul>
+          </div>
+          <div class="doc-section-block">
+            <h5>3. 대학별 특화 전략</h5>
+            <p>• 대전보건대: 보건의료 바이오헬스 AI 인프라 및 메디컬 데이터 분석 역량 강화</p>
+            <p>• 우송정보대: 지능정보 소프트웨어 실무 및 지역 산업체 연계 산학협력 캡스톤 집중</p>
+          </div>
+        `
+      },
+      {
+        id: 'plan-02',
+        title: '[연합협약서] 교육부 · 한국연구재단-대전보건대-우송정보대 사업협약서 원본',
+        category: 'plan',
+        fileType: 'pdf',
+        size: '3.2 MB',
+        date: '2026.05.18',
+        authRole: '총괄책임자 / 평가위원',
+        author: '교육부 / 한국연구재단',
+        summary: `
+          <h4>【에이아이디 전환 중점사업 협약서 요약】</h4>
+          <div class="doc-section-block">
+            <h5>협약 주요 조항</h5>
+            <p>• 제1조 (목적): 본 협약은 전문대학의 AI·DX 전환을 통한 실무형 전문기술인재 양성을 목적으로 함</p>
+            <p>• 제4조 (연합형 사업단 의무): 대전보건대학교와 우송정보대학은 공동 거버넌스를 구성하고 시설 및 교육자원을 상호 공유함</p>
+            <p>• 제7조 (연구비 정산 및 연차평가): 한국연구재단 지침에 따라 사업비 집행 및 연차 성과보고서를 성실히 제출함</p>
+          </div>
+        `
+      },
+      {
+        id: 'minutes-01',
+        title: '[회의록] 2026년 제1차 AIDX 사업단 킥오프 및 연합 운영위원회 회의록',
+        category: 'minutes',
+        fileType: 'doc',
+        size: '520 KB',
+        date: '2026.05.22',
+        authRole: '전체 인가자',
+        author: 'AIDX 연합 사무국',
+        summary: `
+          <h4>【제1차 AIDX 연합 운영위원회 회의 결과】</h4>
+          <div class="doc-section-block">
+            <h5>1. 회의 개요</h5>
+            <p>• 일시: 2026년 5월 22일(금) 14:00~16:30</p>
+            <p>• 장소: 대전보건대학교 본관 대회의실 및 화상회의 병행</p>
+            <p>• 참석자: 대전보건대 사업단장, 우송정보대 사업단장 외 실무책임자 12명</p>
+          </div>
+          <div class="doc-section-block">
+            <h5>2. 주요 심의 및 의결 사항</h5>
+            <ul>
+              <li>스마트 AI 실습실 공간 배정 및 하드웨어(GPU 서버) 구매 규격 확정</li>
+              <li>전교생 대상 생성형 AI(Claude/ChatGPT Edu) 라이선스 배정 방식 승인</li>
+              <li>1차년도 2학기 교양 AI 기초 교과목 3종 신설 안건 통과</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 'minutes-02',
+        title: '[회의록] 제2차 보건의료-ICT 융합 X+AI 교육과정 개발 실무 소위원회 회의록',
+        category: 'minutes',
+        fileType: 'doc',
+        size: '640 KB',
+        date: '2026.06.12',
+        authRole: '참여연구원',
+        author: '교육과정 개발 소위원회',
+        summary: `
+          <h4>【보건의료 × ICT AI 교육과정 개발 회의록】</h4>
+          <div class="doc-section-block">
+            <h5>개발 교과목 매핑 안</h5>
+            <p>• 간호/임상병리: 전공 연계 의료데이터 AI 분석 기초 (2학점)</p>
+            <p>• 방사선/물리치료: AI 기반 영상진단 보조 실무 프로젝트 (2학점)</p>
+            <p>• IT/소프트웨어: 헬스케어 DX 시스템 설계 및 프롬프트 엔지니어링 (3학점)</p>
+          </div>
+        `
+      },
+      {
+        id: 'forms-01',
+        title: '[연구비서식] 2026년 AIDX 국고사업 연구개발비 집행 및 정산 매뉴얼 양식집',
+        category: 'forms',
+        fileType: 'xls',
+        size: '1.8 MB',
+        date: '2026.05.25',
+        authRole: '전체 인가자',
+        author: '한국연구재단 / 사업단 행정지원실',
+        summary: `
+          <h4>【국고사업 연구개발비 집행 매뉴얼 안내】</h4>
+          <div class="doc-section-block">
+            <h5>포함된 엑셀 서식 목록</h5>
+            <ul>
+              <li>[서식 1호] 연구수당 및 인건비 지급 청구서</li>
+              <li>[서식 2호] AI 실습기자재 및 소프트웨어 라이선스 구매 품의서</li>
+              <li>[서식 3호] 전문가 활용비(외부 특강, 자문) 지급 신청서</li>
+              <li>[서식 4호] 교육보조원 및 조교 장학금 지급 내역서</li>
+            </ul>
+          </div>
+        `
+      },
+      {
+        id: 'forms-02',
+        title: '[서식] 학생용 생성형 AI 라이선스 신청서 및 윤리 서약서',
+        category: 'forms',
+        fileType: 'doc',
+        size: '380 KB',
+        date: '2026.06.01',
+        authRole: '전체 인가자',
+        author: '학생지원분과',
+        summary: `
+          <h4>【생성형 AI 라이선스 및 AI 연구윤리 서약서】</h4>
+          <p>본 서식은 대전보건대 및 우송정보대 재학생의 AIDX 생성형 AI 계정 발급 및 올바른 AI 활용 윤리를 확인하기 위한 서약서 양식입니다.</p>
+        `
+      },
+      {
+        id: 'report-01',
+        title: '[진척보고] 1차년도 상반기 AI 교육 인프라 구축 및 SW 도입 실적 보고서',
+        category: 'report',
+        fileType: 'ppt',
+        size: '22.4 MB',
+        date: '2026.07.10',
+        authRole: '총괄책임자 / 평가위원',
+        author: 'AIDX 인프라구축추진팀',
+        summary: `
+          <h4>【AI 교육 인프라 구축 진척 보고서】</h4>
+          <div class="doc-section-block">
+            <h5>인프라 구축 달성 현황</h5>
+            <p>• 대전보건대 스마트 AI 실습실(본관 402호) 완공율: 95%</p>
+            <p>• 우송정보대 ICT DX 실습센터(산학관 201호) 완공율: 92%</p>
+            <p>• 고성능 GPU AI 연산 서버 노드 4기 도입 및 테스트 완료</p>
+          </div>
+        `
+      },
+      {
+        id: 'report-02',
+        title: '[조사보고] 대전·충청권 바이오/의료 산업체 AI 기술 수요조사 분석 결과보고서',
+        category: 'report',
+        fileType: 'pdf',
+        size: '5.6 MB',
+        date: '2026.07.28',
+        authRole: '참여연구원',
+        author: '산학협력추진단',
+        summary: `
+          <h4>【충청권 바이오/의료 산업체 AI 수요조사 결과】</h4>
+          <div class="doc-section-block">
+            <h5>핵심 조사 결과 (응답 기업 84개사)</h5>
+            <p>• 가장 시급한 AI 직무: 데이터 전처리 및 분석(68%), AI 프롬프트 업무 자동화(54%)</p>
+            <p>• 산업체 요구사항: 즉시 현장에 투입 가능한 실무형 전공-AI 융합 인재 필요</p>
+          </div>
+        `
+      }
+    ];
+
+    // 2. Main DOM Interactive Logic
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initialize Lucide Icons
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+
+      // Spline iframe loading state
+      const splineIframe = document.querySelector('#spline-container iframe');
+      const splineLoader = document.getElementById('spline-loader');
+      if (splineIframe && splineLoader) {
+        splineIframe.addEventListener('load', () => {
+          splineLoader.style.opacity = '0';
+          setTimeout(() => {
+            splineLoader.style.display = 'none';
+          }, 300);
+        });
+      }
+
+      // Mobile Menu Toggle
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileDrawer = document.getElementById('mobile-drawer');
+      if (mobileBtn && mobileDrawer) {
+        mobileBtn.addEventListener('click', () => {
+          mobileDrawer.classList.toggle('open');
+        });
+
+        const mobileLinks = mobileDrawer.querySelectorAll('.mobile-nav-link, .btn');
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileDrawer.classList.remove('open');
+          });
+        });
+      }
+
+      // Quick Navigation to Drive
+      const quickDriveBtn = document.getElementById('quick-drive-btn');
+      const heroDriveCta = document.getElementById('hero-drive-cta');
+      const driveSection = document.getElementById('secure-drive');
+
+      const scrollToDrive = (e) => {
+        if (driveSection) {
+          driveSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+      if (quickDriveBtn) quickDriveBtn.addEventListener('click', scrollToDrive);
+      if (heroDriveCta) heroDriveCta.addEventListener('click', scrollToDrive);
+
+      // 3. Security Gate & Authentication System
+      const gateCard = document.getElementById('drive-gate');
+      const driveHub = document.getElementById('drive-hub');
+      const authForm = document.getElementById('gate-auth-form');
+      const passcodeInput = document.getElementById('passcode-input');
+      const roleSelect = document.getElementById('user-role-select');
+      const authErrorMsg = document.getElementById('auth-error-msg');
+      const quickLoginBtn = document.getElementById('quick-login-btn');
+      const logoutBtn = document.getElementById('logout-btn');
+      const currentRoleBadge = document.getElementById('current-role-badge');
+      const togglePwBtn = document.getElementById('toggle-pw-btn');
+
+      // Toggle Password Visibility
+      if (togglePwBtn && passcodeInput) {
+        togglePwBtn.addEventListener('click', () => {
+          const isPassword = passcodeInput.type === 'password';
+          passcodeInput.type = isPassword ? 'text' : 'password';
+          const eyeIcon = togglePwBtn.querySelector('i');
+          if (eyeIcon) {
+            eyeIcon.setAttribute('data-lucide', isPassword ? 'eye-off' : 'eye');
+            if (window.lucide) window.lucide.createIcons();
+          }
+        });
+      }
+
+      // Perform Login Handler
+      const performLogin = (role, inputCode) => {
+        if (inputCode.trim().toLowerCase() === DEFAULT_PASSCODE || inputCode.trim() === '1234') {
+          sessionStorage.setItem('aidx_auth', 'true');
+          sessionStorage.setItem('aidx_role', role);
+          renderAuthenticatedState(role);
+          showToast(`🔐 ${role} 권한으로 보안 자료실에 성공적으로 접속하였습니다.`);
+        } else {
+          if (authErrorMsg) {
+            authErrorMsg.classList.add('visible');
+          }
+        }
+      };
+
+      const renderAuthenticatedState = (role) => {
+        if (gateCard) gateCard.classList.add('hidden');
+        if (driveHub) driveHub.classList.remove('hidden');
+        if (currentRoleBadge) currentRoleBadge.textContent = `${role} 권한 인가됨`;
+        renderFiles();
+        if (window.lucide) window.lucide.createIcons();
+      };
+
+      const performLogout = () => {
+        sessionStorage.removeItem('aidx_auth');
+        sessionStorage.removeItem('aidx_role');
+        if (driveHub) driveHub.classList.add('hidden');
+        if (gateCard) gateCard.classList.remove('hidden');
+        if (passcodeInput) passcodeInput.value = '';
+        if (authErrorMsg) authErrorMsg.classList.remove('visible');
+        showToast('보안 세션이 안전하게 종료되었습니다.');
+      };
+
+      if (authForm) {
+        authForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const role = roleSelect ? roleSelect.value : '참여연구원';
+          const code = passcodeInput ? passcodeInput.value : '';
+          performLogin(role, code);
+        });
+      }
+
+      if (quickLoginBtn) {
+        quickLoginBtn.addEventListener('click', () => {
+          const role = roleSelect ? roleSelect.value : '총괄책임자 (대전보건대)';
+          if (passcodeInput) passcodeInput.value = DEFAULT_PASSCODE;
+          performLogin(role, DEFAULT_PASSCODE);
+        });
+      }
+
+      if (logoutBtn) {
+        logoutBtn.addEventListener('click', performLogout);
+      }
+
+      // Check existing session
+      const existingAuth = sessionStorage.getItem('aidx_auth');
+      const existingRole = sessionStorage.getItem('aidx_role') || '참여연구원';
+      if (existingAuth === 'true') {
+        renderAuthenticatedState(existingRole);
+      }
+
+      // 4. Google Drive Explorer & Filter Engine
+      const fileContainer = document.getElementById('file-list-container');
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const searchInput = document.getElementById('file-search-input');
+      let currentFilter = 'all';
+      let currentSearchQuery = '';
+
+      const renderFiles = () => {
+        if (!fileContainer) return;
+
+        const filtered = PROJECT_FILES.filter(file => {
+          const matchesCategory = (currentFilter === 'all') || (file.category === currentFilter);
+          const matchesSearch = file.title.toLowerCase().includes(currentSearchQuery.toLowerCase()) ||
+                                file.author.toLowerCase().includes(currentSearchQuery.toLowerCase());
+          return matchesCategory && matchesSearch;
+        });
+
+        if (filtered.length === 0) {
+          fileContainer.innerHTML = `
+            <div style="grid-column: 1 / -1; text-align: center; padding: 40px; background: #ffffff; border-radius: 12px; border: 1px dashed #cbd5e1;">
+              <p style="color: #64748b; font-size: 0.95rem;">검색 조건에 일치하는 파일이 없습니다.</p>
+            </div>
+          `;
+          return;
+        }
+
+        fileContainer.innerHTML = filtered.map(file => {
+          const badgeClass = file.fileType;
+          const typeLabel = file.fileType.toUpperCase();
+          return `
+            <div class="file-item-card" data-id="${file.id}">
+              <div class="file-card-top">
+                <div class="file-type-badge ${badgeClass}">${typeLabel}</div>
+                <div class="file-info">
+                  <h4 class="file-name">${file.title}</h4>
+                  <div class="file-meta-row">
+                    <span class="file-category-tag">${getCategoryName(file.category)}</span>
+                    <span>용량: ${file.size}</span>
+                    <span>수정일: ${file.date}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="file-card-bottom">
+                <span class="file-auth-level"><i data-lucide="shield"></i> ${file.authRole}</span>
+                <div class="file-actions-row">
+                  <button type="button" class="btn-file-action btn-preview" data-id="${file.id}">
+                    <i data-lucide="eye"></i> 미리보기
+                  </button>
+                  <a href="${currentGoogleDriveUrl}" target="_blank" rel="noopener noreferrer" class="btn-file-action">
+                    <i data-lucide="external-link"></i> Drive 열기
+                  </a>
+                  <button type="button" class="btn-file-action btn-download" data-title="${file.title}">
+                    <i data-lucide="download"></i> 다운로드
+                  </button>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        if (window.lucide) window.lucide.createIcons();
+
+        // Attach File Preview Listeners
+        const previewBtns = fileContainer.querySelectorAll('.btn-preview');
+        previewBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const fileId = btn.getAttribute('data-id');
+            openDocPreviewModal(fileId);
+          });
+        });
+
+        // Attach File Download Listeners
+        const downloadBtns = fileContainer.querySelectorAll('.btn-download');
+        downloadBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const title = btn.getAttribute('data-title');
+            handleMockDownload(title);
+          });
+        });
+      };
+
+      const getCategoryName = (cat) => {
+        switch (cat) {
+          case 'plan': return '사업계획서/협약서';
+          case 'minutes': return '정기 회의록';
+          case 'report': return '성과/보고서';
+          case 'forms': return '연구비/공통서식';
+          default: return '공통 자료';
+        }
+      };
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentFilter = btn.getAttribute('data-category');
+          renderFiles();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          currentSearchQuery = e.target.value;
+          renderFiles();
+        });
+      }
+
+      // 5. Document Preview Modal
+      const docModal = document.getElementById('doc-preview-modal');
+      const modalCloseBtn = document.getElementById('close-preview-modal-btn');
+      const modalTitle = document.getElementById('modal-doc-title');
+      const modalTypeBadge = document.getElementById('modal-doc-type');
+      const modalContent = document.getElementById('modal-doc-content');
+      const modalMeta = document.getElementById('modal-doc-meta');
+      const modalDriveLink = document.getElementById('modal-drive-link');
+      const modalDownloadBtn = document.getElementById('modal-download-btn');
+
+      let activeModalFile = null;
+
+      const openDocPreviewModal = (fileId) => {
+        const file = PROJECT_FILES.find(f => f.id === fileId);
+        if (!file || !docModal) return;
+
+        activeModalFile = file;
+        modalTitle.textContent = file.title;
+        modalTypeBadge.textContent = file.fileType.toUpperCase();
+        modalTypeBadge.className = `modal-badge ${file.fileType}`;
+        modalContent.innerHTML = `
+          <div class="doc-viewer-card">
+            ${file.summary}
+          </div>
+        `;
+        modalMeta.innerHTML = `
+          <span>작성/주관: ${file.author}</span> · 
+          <span>최종 수정: ${file.date}</span> · 
+          <span>용량: ${file.size}</span>
+        `;
+        if (modalDriveLink) modalDriveLink.href = currentGoogleDriveUrl;
+
+        docModal.classList.add('active');
+        if (window.lucide) window.lucide.createIcons();
+      };
+
+      if (modalCloseBtn) {
+        modalCloseBtn.addEventListener('click', () => {
+          docModal.classList.remove('active');
+        });
+      }
+
+      if (docModal) {
+        docModal.addEventListener('click', (e) => {
+          if (e.target === docModal) {
+            docModal.classList.remove('active');
+          }
+        });
+      }
+
+      if (modalDownloadBtn) {
+        modalDownloadBtn.addEventListener('click', () => {
+          if (activeModalFile) {
+            handleMockDownload(activeModalFile.title);
+          }
+        });
+      }
+
+      const handleMockDownload = (fileName) => {
+        showToast(`📥 [${fileName}] 다운로드가 시작되었습니다.`);
+        const dummyBlob = new Blob([`[AIDX 국고사업단 보안 문서]\n문서명: ${fileName}\n사업단: 대전보건대학교(주관) × 우송정보대학(참여)\n지원: 교육부 · 한국연구재단\n\n본 문서는 인가된 사용자 전용 보안 파일입니다.`], { type: 'text/plain;charset=utf-8' });
+        const tempLink = document.createElement('a');
+        tempLink.href = URL.createObjectURL(dummyBlob);
+        tempLink.download = `${fileName}.txt`;
+        document.body.appendChild(tempLink);
+        tempLink.click();
+        document.body.removeChild(tempLink);
+      };
+
+      // 6. Google Drive URL Configurator Modal
+      const configModal = document.getElementById('drive-config-modal');
+      const openConfigBtn = document.getElementById('configure-drive-url-btn');
+      const closeConfigBtn = document.getElementById('close-config-modal-btn');
+      const configForm = document.getElementById('drive-config-form');
+      const customFolderNameInput = document.getElementById('custom-folder-name');
+      const customDriveUrlInput = document.getElementById('custom-drive-url');
+      const driveFolderNameDisplay = document.getElementById('current-drive-folder-name');
+      const mainDriveLink = document.getElementById('main-google-drive-link');
+
+      if (openConfigBtn && configModal) {
+        openConfigBtn.addEventListener('click', () => {
+          configModal.classList.add('active');
+        });
+      }
+
+      if (closeConfigBtn && configModal) {
+        closeConfigBtn.addEventListener('click', () => {
+          configModal.classList.remove('active');
+        });
+      }
+
+      if (configModal) {
+        configModal.addEventListener('click', (e) => {
+          if (e.target === configModal) {
+            configModal.classList.remove('active');
+          }
+        });
+      }
+
+      if (configForm) {
+        configForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const folderName = customFolderNameInput.value.trim();
+          const driveUrl = customDriveUrlInput.value.trim();
+
+          if (folderName) {
+            currentDriveFolderName = folderName;
+            if (driveFolderNameDisplay) driveFolderNameDisplay.textContent = folderName;
+          }
+          if (driveUrl) {
+            currentGoogleDriveUrl = driveUrl;
+            if (mainDriveLink) mainDriveLink.href = driveUrl;
+          }
+
+          configModal.classList.remove('active');
+          renderFiles();
+          showToast('✅ 구글 드라이브 연동 설정이 성공적으로 저장되었습니다!');
+        });
+      }
+
+      // 7. Roadmap Tab Switcher
+      const roadmapTabBtns = document.querySelectorAll('.roadmap-tab-btn');
+      const roadmapPanels = document.querySelectorAll('.roadmap-panel');
+
+      roadmapTabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetId = btn.getAttribute('data-target');
+          roadmapTabBtns.forEach(b => b.classList.remove('active'));
+          roadmapPanels.forEach(p => p.classList.remove('active'));
+
+          btn.classList.add('active');
+          const targetPanel = document.getElementById(targetId);
+          if (targetPanel) {
+            targetPanel.classList.add('active');
+          }
+          if (window.lucide) window.lucide.createIcons();
+        });
+      });
+
+      // 8. Online Inquiry Form
+      const inquiryForm = document.getElementById('quick-inquiry-form');
+      const submitInquiryBtn = document.getElementById('submit-inquiry-btn');
+
+      if (inquiryForm) {
+        inquiryForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('sender-name')?.value || '신청자';
+          const email = document.getElementById('sender-email')?.value || '';
+
+          if (submitInquiryBtn) {
+            submitInquiryBtn.disabled = true;
+            submitInquiryBtn.innerHTML = `
+              <div class="spinner" style="width:16px;height:16px;border-width:2px;"></div>
+              <span>전송 중...</span>
+            `;
+          }
+
+          setTimeout(() => {
+            if (submitInquiryBtn) {
+              submitInquiryBtn.disabled = false;
+              submitInquiryBtn.innerHTML = `
+                <i data-lucide="send"></i>
+                <span>문의 내용 발송하기</span>
+              `;
+            }
+            inquiryForm.reset();
+            showToast(`✉️ ${name}님(${email}), 문의가 정상 접수되었습니다. 사업단에서 신속히 안내드리겠습니다.`);
+            if (window.lucide) window.lucide.createIcons();
+          }, 1000);
+        });
+      }
+
+      // 9. Toast Notification System
+      function showToast(message) {
+        const container = document.getElementById('toast-container');
+        if (!container) return;
+
+        const toast = document.createElement('div');
+        toast.className = 'toast';
+        toast.innerHTML = `
+          <i data-lucide="check-circle-2"></i>
+          <span>${message}</span>
+        `;
+
+        container.appendChild(toast);
+        if (window.lucide) window.lucide.createIcons();
+
+        setTimeout(() => {
+          toast.style.opacity = '0';
+          toast.style.transform = 'translateY(10px)';
+          toast.style.transition = 'all 0.3s ease';
+          setTimeout(() => {
+            if (toast.parentElement) toast.parentElement.removeChild(toast);
+          }, 300);
+        }, 3800);
+      }
+    });
+  </script>
+</body>
+</html>
