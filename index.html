@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -1040,28 +1041,31 @@
       background: var(--bg-alt);
     }
 
-    .strategy-bento-grid {
+.strategy-bento-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr); /* 정확한 2열 구조 */
+      grid-template-rows: repeat(2, auto);     /* 2행 구조 */
       gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
-    .bento-card {
+.bento-card {
       background: #ffffff;
       border: 1px solid var(--border-light);
-      border-radius: var(--radius-lg);
-      padding: 30px;
+      border-radius: 20px;
+      padding: 32px;
       box-shadow: var(--shadow-sm);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: all var(--transition-normal);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    .bento-card:hover {
+.bento-card:hover {
       box-shadow: var(--shadow-lg);
       border-color: var(--primary-200);
-      transform: translateY(-3px);
+      transform: translateY(-4px);
     }
 
     .bento-large {
@@ -1074,7 +1078,7 @@
       background: linear-gradient(90deg, #ffffff 0%, #fdf4ff 100%);
     }
 
-    .bento-header {
+ .bento-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -1083,7 +1087,7 @@
 
     .bento-num {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.375rem;
       font-weight: 800;
       color: var(--primary-600);
     }
@@ -1091,28 +1095,30 @@
     .bento-badge {
       font-size: 0.75rem;
       font-weight: 700;
-      padding: 4px 10px;
+      padding: 4px 12px;
       border-radius: var(--radius-full);
       background: var(--primary-50);
       color: var(--primary-700);
       border: 1px solid var(--primary-100);
     }
 
-    .bento-body {
+.bento-body {
       display: flex;
       flex-direction: column;
       gap: 12px;
     }
 
-    .bento-icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 10px;
-      background: var(--primary-100);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--primary-700);
+    .bento-body h3 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.35;
+    }
+
+    .bento-body p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
     }
 
     .bento-icon i {
@@ -1127,11 +1133,6 @@
       line-height: 1.35;
     }
 
-    .bento-body p {
-      font-size: 0.9375rem;
-      color: var(--text-muted);
-      line-height: 1.7;
-    }
 
     .bento-tags {
       display: flex;
@@ -1152,7 +1153,7 @@
 
     .bento-stats-row {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 16px;
       margin-top: 16px;
       padding-top: 16px;
@@ -1816,7 +1817,7 @@
     /* File Grid & Cards */
     .file-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 18px;
     }
 
@@ -2588,7 +2589,7 @@
       }
 
       .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
       }
 
       .overview-grid {
@@ -2604,11 +2605,11 @@
       }
 
       .bento-stats-row {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
       }
 
       .roadmap-timeline-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
       }
 
       .consortium-cards-grid {
@@ -2620,7 +2621,7 @@
       }
 
       .related-cards-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
       }
 
       .footer-top-grid {
@@ -2636,6 +2637,13 @@
         display: block;
       }
     }
+
+/* 반응형: 화면이 좁아지면 1열로 변경 */
+        @media (max-width: 600px) {
+            .strategy-grid {
+                grid-template-columns: 1fr;
+            }
+        }
 
     @media (max-width: 640px) {
       .hero-headline {
@@ -2972,7 +2980,7 @@
       </div>
     </section>
 
-    <!-- 4 Core Strategies Section -->
+<!-- 4 Core Strategies Section -->
     <section class="section strategy-section" id="strategy">
       <div class="section-container">
         <div class="section-header">
@@ -2985,7 +2993,7 @@
 
         <div class="strategy-bento-grid">
           <!-- Bento Box 1 -->
-          <div class="bento-card bento-large">
+          <div class="bento-card">
             <div class="bento-header">
               <span class="bento-num">01</span>
               <div class="bento-badge">인프라 고도화</div>
@@ -2993,16 +3001,12 @@
             <div class="bento-body">
               <div class="bento-icon"><i data-lucide="server"></i></div>
               <h3>AI 교육 기반 마련 및 생성형 AI 인프라 보급</h3>
-              <p>
-                대학 내 첨단 <strong>AI 실습실</strong> 및 <strong>스마트 인터랙티브 강의실</strong>을 구축하고, 
-                학생과 교직원 전원에게 상용 <strong>생성형 AI(ChatGPT, Claude 등) 계정을 보급</strong>하여 
-                일상 학습과 연구에 AI를 상시 활용할 수 있는 환경을 조성합니다.
-              </p>
+              <p>클라우드 기반의 AI 학습 환경 조성, 데이터 통합 플랫폼 고도화 및 생성형 AI 계정 보급.</p>
               <div class="bento-tags">
-                <span>#스마트AI실습실</span>
-                <span>#생성형AI계정보급</span>
-                <span>#고성능GPU서버</span>
-                <span>#AI학습지원플랫폼</span>
+                <span>#AI교육인프라</span>
+                <span>#데이터클라우드</span>
+                <span>#생성형AI보급</span>
+                <span>#AI학습진단</span>
               </div>
             </div>
           </div>
@@ -3016,10 +3020,13 @@
             <div class="bento-body">
               <div class="bento-icon"><i data-lucide="graduation-cap"></i></div>
               <h3>수요자 맞춤형 AI 교육과정 개발·운영</h3>
-              <p>
-                재학생 전공·교양 소단위(마이크로디그리)·모듈형 과정을 통해 
-                <strong>기초 도구 활용 → 협업/소통 → 데이터 기반 결정 → 전공-AI 통합</strong>으로 이어지는 단계별 역량을 배양합니다.
-              </p>
+              <p>전공별 AI 융합 커리큘럼(Micro Degree) 운영 및 디지털 배지 기반의 학습성과 관리 체계 구축.</p>
+              <div class="bento-tags">
+                <span>#AI융합교육과정</span>
+                <span>#소단위전공과정</span>
+                <span>#산학연계인턴십</span>
+                <span>#디지털배지</span>
+              </div>
             </div>
           </div>
 
@@ -3032,43 +3039,31 @@
             <div class="bento-body">
               <div class="bento-icon"><i data-lucide="user-check"></i></div>
               <h3>AI 기반 교수학습법 및 스마트 행정 혁신</h3>
-              <p>
-                교원의 AI 수업 설계 및 학생 맞춤형 학습 진단 역량을 높이고, 
-                대학 행정 전반에 AI 자동화 도구를 적극 도입하여 대학 행정 효율성을 대폭 개선합니다.
-              </p>
+              <p>교원 교수학습법 혁신 연수 및 직원의 AI 행정 도구 활용 역량 강화 지원.</p>
+              <div class="bento-tags">
+                <span>#교수학습법혁신</span>
+                <span>#스마트행정역량</span>
+                <span>#우수교원확보</span>
+                <span>#교직원AI연수</span>
+              </div>
             </div>
           </div>
 
           <!-- Bento Box 4 -->
-          <div class="bento-card bento-wide">
+          <div class="bento-card">
             <div class="bento-header">
               <span class="bento-num">04</span>
               <div class="bento-badge">대학 특화 모델</div>
             </div>
             <div class="bento-body">
               <div class="bento-icon"><i data-lucide="dna"></i></div>
-              <h3>대전보건대 × 우송정보대 「보건의료·ICT 융합 AIDX 특화 모델」</h3>
-              <p>
-                보건의료 데이터 분석, 스마트 헬스케어 디바이스, 의료 영상 AI 보조 실무 등 
-                대전보건대의 보건 특화 역량과 우송정보대의 IT/실무 기술을 결합하여 독보적인 고등직업교육 산학협력 모델을 구축합니다.
-              </p>
-              <div class="bento-stats-row">
-                <div class="bento-stat-item">
-                  <strong>학과 구조 개선</strong>
-                  <span>전공별 AI 융합 트랙 신설</span>
-                </div>
-                <div class="bento-stat-item">
-                  <strong>데이터 기반 학생지원</strong>
-                  <span>학습 위기 조기진단 AI 케어</span>
-                </div>
-                <div class="bento-stat-item">
-                  <strong>산학협력 교육혁신</strong>
-                  <span>지역 산업체 현장 캡스톤</span>
-                </div>
-                <div class="bento-stat-item">
-                  <strong>학사제도 유연화</strong>
-                  <span>나노디그리 및 집중이수제</span>
-                </div>
+              <h3>보건의료·ICT 융합 AIDX 특화 모델</h3>
+              <p>대전보건대×우송정보대 상생 거버넌스 구축 및 AI 산학협력 혁신 성과 확산.</p>
+              <div class="bento-tags">
+                <span>#보건의료ICT융합</span>
+                <span>#데이터기반학생지원</span>
+                <span>#산학협력교육혁신</span>
+                <span>#평생학습거점화</span>
               </div>
             </div>
           </div>
